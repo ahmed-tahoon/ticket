@@ -14,14 +14,14 @@
                     class="absolute inset-0 flex items-center"
                     aria-hidden="true"
                 >
-                    <div class="h-0.5 w-full {{ $step->isPrevious() ? 'bg-blue-600' : 'bg-slate-200' }}"></div>
+                    <div class="h-0.5 w-full {{ $step->isPrevious() ? 'bg-black-600' : 'bg-slate-200' }}"></div>
                 </div>
-                <span class="relative cursor-pointer flex h-8 w-8 items-center justify-center rounded-full @if($step->isPrevious()) bg-blue-600 hover:bg-blue-900 @elseif($step->isCurrent()) border-2 border-blue-600 bg-white @else group border-2 border-slate-300 bg-white hover:border-slate-400 @endif">
+                <span class="relative cursor-pointer flex h-8 w-8 items-center justify-center rounded-full @if($step->isPrevious()) bg-black-600 hover:bg-black-900 @elseif($step->isCurrent()) border-2 border-black-600 bg-white @else group border-2 border-slate-300 bg-white hover:border-slate-400 @endif">
                     @if($step->isPrevious())
                         <x-heroicon-m-check class="w-5 h-5 text-white" />
                     @elseif($step->isCurrent())
                         <span
-                            class="h-2.5 w-2.5 rounded-full bg-blue-600"
+                            class="h-2.5 w-2.5 rounded-full bg-black-600"
                             aria-hidden="true"
                         ></span>
                     @else

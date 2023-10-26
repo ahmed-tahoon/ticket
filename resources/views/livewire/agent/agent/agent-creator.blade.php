@@ -98,7 +98,7 @@
                                 <button
                                     wire:click="$toggle('is_admin')"
                                     type="button"
-                                    class="flex-shrink-0 group relative rounded-full inline-flex items-center justify-center h-5 w-10 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:ring-offset-slate-800"
+                                    class="flex-shrink-0 group relative rounded-full inline-flex items-center justify-center h-5 w-10 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:ring-offset-slate-800"
                                     role="switch"
                                     aria-checked="{{ $is_admin ? 'true' : 'false' }}"
                                 >
@@ -109,7 +109,7 @@
                                     ></span>
                                     <span
                                         aria-hidden="true"
-                                        @class(['pointer-events-none absolute h-4 w-9 mx-auto rounded-full transition-colors ease-in-out duration-200', 'bg-blue-600' => $is_admin, 'bg-slate-200' => !$is_admin])
+                                        @class(['pointer-events-none absolute h-4 w-9 mx-auto rounded-full transition-colors ease-in-out duration-200', 'bg-black-600' => $is_admin, 'bg-slate-200' => !$is_admin])
                                     ></span>
                                     <span
                                         aria-hidden="true"

@@ -62,13 +62,13 @@
                 </div>
                 <div class="mt-1 py-16">
                     <div class="text-center">
-                        <p class="text-sm font-semibold text-blue-600 uppercase tracking-wide">@yield('code') error</p>
+                        <p class="text-sm font-semibold text-black-600 uppercase tracking-wide">@yield('code') error</p>
                         <h1 class="mt-2 text-4xl font-extrabold text-slate-900 tracking-tight sm:text-5xl">@yield('title').</h1>
                         <p class="mt-2 text-base text-slate-500">@yield('message').</p>
                         <div class="mt-6">
                             <a
                                 href="/"
-                                class="text-base font-medium text-blue-600 hover:text-blue-500"
+                                class="text-base font-medium text-black-600 hover:text-black-500"
                             >
                                 {{ __('Go back home') }}<span aria-hidden="true"> &rarr;</span>
                             </a>

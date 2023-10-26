@@ -7,11 +7,11 @@
                 <button
                     x-on:click="expanded = !expanded"
                     type="button"
-                    class="relative flex w-full items-center justify-between text-left hover:text-blue-500 dark:text-slate-300 dark:hover:text-slate-200"
+                    class="relative flex w-full items-center justify-between text-left hover:text-black-500 dark:text-slate-300 dark:hover:text-slate-200"
                 >
                     <span
                         class="font-display leading-6 text-lg text-slate-900 dark:text-slate-200"
-                        :class="{ 'text-blue-600': expanded, 'text-slate-900': !(expanded) }"
+                        :class="{ 'text-black-600': expanded, 'text-slate-900': !(expanded) }"
                     >
                         {{ $title }}
                     </span>

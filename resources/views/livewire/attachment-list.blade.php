@@ -15,7 +15,7 @@
                     <button
                         wire:click="preview('{{ $attachment->id }}')"
                         type="button"
-                        class="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
+                        class="font-medium text-black-600 hover:text-black-500 dark:text-black-400 dark:hover:text-black-300"
                     >
                         {{ __('Open') }}
                     </button>

@@ -4,12 +4,12 @@
             <x-slot:trigger>
                 <button
                     type="button"
-                    class="relative bg-white p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:bg-slate-800 dark:text-slate-300 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
+                    class="relative bg-white p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:bg-slate-800 dark:text-slate-300 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
                 >
                     <span class="sr-only">{{ __('Open notification page') }}</span>
                     <x-heroicon-o-inbox-stack class="w-6 h-6" />
                     @if($this->openTicketsCount > 0)
-                        <span class="absolute block top-0.5 right-0 h-2.5 w-2.5 rounded-full bg-blue-400 ring-2 ring-white dark:ring-slate-800"></span>
+                        <span class="absolute block top-0.5 right-0 h-2.5 w-2.5 rounded-full bg-black-400 ring-2 ring-white dark:ring-slate-800"></span>
                     @endif
                 </button>
             </x-slot:trigger>

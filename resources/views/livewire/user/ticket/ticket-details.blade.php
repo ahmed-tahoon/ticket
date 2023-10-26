@@ -16,13 +16,13 @@
             <div class="divide-y divide-slate-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
                 @include('layouts.navigation-user')
 
-                <div class="lg:col-span-9 min-h-[500px]">
+                <div class="lg:col-span-12 min-h-[500px]">
                     <div class="border-b border-slate-200 pl-4 pr-6 pt-4 pb-4 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6">
                         <div class="flex items-baseline justify-between">
                             <h1 class="flex-1 font-display text-lg">
                                 {{ $ticket->subject }}
                             </h1>
-                            <span class="ml-5 hidden sm:inline-flex items-center rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800">
+                            <span class="ml-5 hidden sm:inline-flex items-center rounded bg-black-100 px-2.5 py-0.5 text-sm font-medium text-black-800">
                                 {{ $ticket->status->label() }}
                             </span>
                         </div>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="px-4 py-6 sm:p-6">
                         <!-- Ticket content-->
-                        <div class="prose prose-slate prose-a:text-blue-600 hover:prose-a:text-blue-500 max-w-none break-words">
+                        <div class="prose prose-slate prose-a:text-black-600 hover:prose-a:text-black-500 max-w-none break-words">
                             {!! $ticket->content !!}
                         </div>
                         <!-- Ticket attachment-->

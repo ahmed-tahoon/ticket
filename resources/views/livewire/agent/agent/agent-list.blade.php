@@ -6,7 +6,7 @@
         <div class="mt-4 sm:mt-0">
             <a
                 href="{{ route('agent.agents.create') }}"
-                class="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:hover:bg-blue-500 dark:focus:ring-offset-slate-800"
+                class="inline-flex items-center rounded-md border border-transparent bg-black-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black-700 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:hover:bg-black-500 dark:focus:ring-offset-slate-800"
             >
                 <x-heroicon-m-user-plus class="-ml-1 mr-2 w-4 h-4" />
                 {{ __('Add new Agent') }}
@@ -82,7 +82,7 @@
                                                         >
                                                     </div>
                                                     <div class="ml-4">
-                                                        <a href="{{ route('agent.agents.details', $agent) }}" @class(['font-medium text-slate-900 hover:text-blue-500 hover:underline dark:text-slate-200 dark:hover:text-blue-400', 'line-through' => $agent->isBanned()])>
+                                                        <a href="{{ route('agent.agents.details', $agent) }}" @class(['font-medium text-slate-900 hover:text-black-500 hover:underline dark:text-slate-200 dark:hover:text-black-400', 'line-through' => $agent->isBanned()])>
                                                             {{ $agent->name }}
                                                         </a>
                                                         <p class="text-slate-500 dark:text-slate-400">

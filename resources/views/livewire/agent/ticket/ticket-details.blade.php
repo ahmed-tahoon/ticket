@@ -11,14 +11,14 @@
                             #{{ $ticket->id }} {{ __('opened by') }}
                             <a
                                 href="{{ route('agent.users.details', $ticket->user->id) }}"
-                                class="font-medium text-slate-900 hover:text-blue-500 hover:underline dark:text-slate-200 dark:hover:text-blue-400"
+                                class="font-medium text-slate-900 hover:text-black-500 hover:underline dark:text-slate-200 dark:hover:text-black-400"
                             >
                                 {{ $ticket->user->name }}
                             </a>
                             {{ __('in') }}
                             <a
                                 href="{{ route('agent.tickets.list', ['category' => $ticket->category->slug]) }}"
-                                class="font-medium text-slate-900 hover:text-blue-500 hover:underline dark:text-slate-200 dark:hover:text-blue-400"
+                                class="font-medium text-slate-900 hover:text-black-500 hover:underline dark:text-slate-200 dark:hover:text-black-400"
                             >
                                 {{ $ticket->category->name }}
                             </a>
@@ -27,7 +27,7 @@
                     <div class="mt-4 flex space-x-3 md:mt-0">
                         <a
                             href="{{ route('agent.tickets.edit', $ticket) }}"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 leading-5 rounded-md hover:text-slate-500 focus:outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition dark:border-slate-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 leading-5 rounded-md hover:text-slate-500 focus:outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 transition dark:border-slate-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
                         >
                             <x-heroicon-m-pencil class="-ml-1 mr-2 w-5 h-5 text-slate-400" />
                             <span>{{ __('Edit') }}</span>
@@ -64,7 +64,7 @@
                                 <x-slot:trigger>
                                     <button
                                         type="button"
-                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                     >
                                         <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                     </button>
@@ -101,7 +101,7 @@
                                 <x-slot:trigger>
                                     <button
                                         type="button"
-                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                     >
                                         <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                     </button>
@@ -176,7 +176,7 @@
                                         <x-slot:trigger>
                                             <button
                                                 type="button"
-                                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                             >
                                                 <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                             </button>
@@ -338,7 +338,7 @@
                                         <x-slot:trigger>
                                             <button
                                                 type="button"
-                                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                             >
                                                 <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                             </button>
@@ -377,7 +377,7 @@
                                                             </span>
                                                         </div>
                                                         @if(in_array($agent->id, $ticket->assignees->pluck('id')->toArray()))
-                                                            <span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                                                            <span class="text-black-600 absolute inset-y-0 right-0 flex items-center pr-4">
                                                                 <x-heroicon-m-check class="w-5 h-5" />
                                                             </span>
                                                         @endif
@@ -420,7 +420,7 @@
                                             {{ __('No one -') }}
                                             <button
                                                 wire:click="toggleAssignee({{ auth()->user() }})"
-                                                class="hover:text-blue-500 dark:text-slate-400"
+                                                class="hover:text-black-500 dark:text-slate-400"
                                             >
                                                 {{ __('assign your self') }}
                                             </button>
@@ -442,7 +442,7 @@
                                     <x-slot:trigger>
                                         <button
                                             type="button"
-                                            class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                            class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                         >
                                             <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                         </button>
@@ -483,7 +483,7 @@
                                                                 </span>
                                                             </p>
                                                             @if(in_array($label->id, $ticket->labels->pluck('id')->toArray()))
-                                                                <span class="text-blue-500">
+                                                                <span class="text-black-500">
                                                                     <x-heroicon-m-check class="h-5 w-5" />
                                                                 </span>
                                                             @endif
@@ -642,7 +642,7 @@
                         <x-slot:trigger>
                             <button
                                 type="button"
-                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                             >
                                 <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                             </button>
@@ -679,7 +679,7 @@
                         <x-slot:trigger>
                             <button
                                 type="button"
-                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                             >
                                 <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                             </button>
@@ -752,7 +752,7 @@
                                 <x-slot:trigger>
                                     <button
                                         type="button"
-                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                     >
                                         <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                     </button>
@@ -914,7 +914,7 @@
                                 <x-slot:trigger>
                                     <button
                                         type="button"
-                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                        class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                     >
                                         <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                     </button>
@@ -952,7 +952,7 @@
                                                     </span>
                                                 </div>
                                                 @if(in_array($agent->id, $ticket->assignees->pluck('id')->toArray()))
-                                                    <span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                                                    <span class="text-black-600 absolute inset-y-0 right-0 flex items-center pr-4">
                                                         <x-heroicon-m-check class="w-5 h-5" />
                                                     </span>
                                                 @endif
@@ -995,7 +995,7 @@
                                     {{ __('No one -') }}
                                     <button
                                         wire:click="toggleAssignee({{ auth()->user() }})"
-                                        class="hover:text-blue-500 dark:hover:text-blue-300"
+                                        class="hover:text-black-500 dark:hover:text-black-300"
                                     >
                                         {{ __('assign your self') }}
                                     </button>
@@ -1017,7 +1017,7 @@
                             <x-slot:trigger>
                                 <button
                                     type="button"
-                                    class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
+                                    class="p-1 rounded-full text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:hover:text-slate-300 dark:focus:ring-offset-slate-800"
                                 >
                                     <x-heroicon-o-cog-8-tooth class="w-5 h-5" />
                                 </button>
@@ -1057,7 +1057,7 @@
                                                         </span>
                                                     </p>
                                                     @if(in_array($label->id, $ticket->labels->pluck('id')->toArray()))
-                                                        <span class="text-blue-500">
+                                                        <span class="text-black-500">
                                                             <x-heroicon-m-check class="h-5 w-5" />
                                                         </span>
                                                     @endif
@@ -1243,7 +1243,7 @@
                                 <button
                                     wire:click="generateLabelColor"
                                     type="button"
-                                    class="inline-flex items-center border border-slate-200 rounded px-2 text-sm font-sans font-medium text-slate-400 hover:bg-blue-500 hover:border-blue-500 hover:text-white dark:border-slate-500 dark:hover:border-blue-500"
+                                    class="inline-flex items-center border border-slate-200 rounded px-2 text-sm font-sans font-medium text-slate-400 hover:bg-black-500 hover:border-black-500 hover:text-white dark:border-slate-500 dark:hover:border-black-500"
                                 >
                                     <x-heroicon-o-arrow-path class="w-4 h-4" />
                                 </button>

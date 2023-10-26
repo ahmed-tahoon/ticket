@@ -99,7 +99,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mt-8 prose prose-slate max-w-none break-words sm:prose-sm md:prose-base prose-a:text-blue-600 hover:prose-a:text-blue-500">
+                    <div class="mt-8 prose prose-slate max-w-none break-words sm:prose-sm md:prose-base prose-a:text-black-600 hover:prose-a:text-black-500">
                         {!! $article->content !!}
                     </div>
                 </div>

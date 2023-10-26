@@ -29,13 +29,13 @@ use Illuminate\Support\Facades\Route;
 //     'as' => 'user.',
 // ], function () {
 Route::middleware([RedirectIfNotSetup::class,'auth','check-otp'])->group(function () {
-    // Route::get('/', function() {
-    //     return to_route('login');
-    // })->name('guest.welcome');
-    Route::get('/', Welcome::class)->name('guest.welcome');
-    Route::get('collections', CollectionList::class)->name('guest.collection-list');
-    Route::get('collections/{collection:slug}', CollectionDetails::class)->name('guest.collection-details');
-    Route::get('articles/{article:slug}', ArticleDetails::class)->name('guest.article-details');
+    Route::get('/', function() {
+        return to_route('user.tickets.list');
+    })->name('guest.welcome');
+    // Route::get('/', Welcome::class)->name('guest.welcome');
+    // Route::get('collections', CollectionList::class)->name('guest.collection-list');
+    // Route::get('collections/{collection:slug}', CollectionDetails::class)->name('guest.collection-details');
+    // Route::get('articles/{article:slug}', ArticleDetails::class)->name('guest.article-details');
 });
 
 Route::get('setup', Setup::class)->name('setup')->middleware(RedirectIfSetupFinished::class);

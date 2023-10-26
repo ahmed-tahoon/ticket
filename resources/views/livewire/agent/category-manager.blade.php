@@ -171,7 +171,7 @@
                                                 <td class="whitespace-nowrap pl-4 pr-3 py-4 font-medium text-sm text-slate-900 sm:pl-6 dark:text-slate-200">
                                                     <a
                                                         href="{{ route('agent.tickets.list', ['category' => $category->slug]) }}"
-                                                        class="hover:text-blue-500 hover:underline dark:hover:text-blue-400"
+                                                        class="hover:text-black-500 hover:underline dark:hover:text-black-400"
                                                     >
                                                         {{ $category->name }}
                                                     </a>
@@ -183,7 +183,7 @@
                                                     <button
                                                         wire:click="toggleLicenseRequirement({{ $category->id }})"
                                                         type="button"
-                                                        class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-200 dark:focus:ring-offset-slate-800"
+                                                        class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 focus:ring-offset-slate-200 dark:focus:ring-offset-slate-800"
                                                     >
                                                         <span class="sr-only">{{ __('Toggle support status') }}</span>
                                                         <span
@@ -192,7 +192,7 @@
                                                         ></span>
                                                         <span
                                                             aria-hidden="true"
-                                                            @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $category->is_license_required, 'bg-slate-200' => ! $category->is_license_required])
+                                                            @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $category->is_license_required, 'bg-slate-200' => ! $category->is_license_required])
                                                         ></span>
                                                         <span
                                                             aria-hidden="true"
@@ -216,7 +216,7 @@
                                                                 wire:click="editCategory({{ $category->id }})"
                                                                 type="button"
                                                                 title="{{ __('Edit label') }}"
-                                                                class="hover:text-blue-500"
+                                                                class="hover:text-black-500"
                                                             >
                                                                 <x-heroicon-m-pencil-square class="h-4 w-4" />
                                                                 <span class="sr-only">{{ __('Edit') }}</span>
@@ -240,7 +240,7 @@
                                                                 x-on:click="confirmCategoryDeletion = false"
                                                                 type="button"
                                                                 title="{{ __('Cancel') }}"
-                                                                class="text-blue-600 hover:text-blue-500"
+                                                                class="text-black-600 hover:text-black-500"
                                                             >
                                                                 <x-heroicon-m-x-circle class="h-4 w-4" />
                                                                 <span class="sr-only">{{ __('Cancel') }}</span>

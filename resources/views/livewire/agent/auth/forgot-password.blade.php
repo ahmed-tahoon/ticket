@@ -3,12 +3,12 @@
         <!-- Logo -->
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-blue-600 dark:fill-slate-200" />
+                <x-application-logo class="w-20 h-20 fill-black-600 dark:fill-slate-200" />
             </a>
         </x-slot>
 
         <div class="text-center mb-5 md:mb-7">
-            <h1 class="text-3xl font-display font-medium tracking-tight text-blue-600 dark:text-slate-200">
+            <h1 class="text-3xl font-display font-medium tracking-tight text-black-600 dark:text-slate-200">
                 {{ __('Forgot your password?') }}
             </h1>
             <p class="mt-2 text-slate-500 dark:text-slate-400">

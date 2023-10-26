@@ -18,7 +18,7 @@
             type="button"
             title="{{ __('Bold') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('bold', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bold', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('bold', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bold', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@
             type="button"
             title="{{ __('Italic') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('italic', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('italic', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('italic', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('italic', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@
             type="button"
             title="{{ __('Underline') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('underline', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('underline', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('underline', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('underline', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@
             type="button"
             title="{{ __('Bullet list') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('bulletList', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bulletList', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('bulletList', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bulletList', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
             type="button"
             title="{{ __('Ordered list') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('orderedList', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('orderedList', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('orderedList', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('orderedList', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@
             type="button"
             title="{{ __('Link') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('link', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('link', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('link', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('link', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@
             type="button"
             title="{{ __('Quote') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('blockquote', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('blockquote', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('blockquote', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('blockquote', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +151,7 @@
             type="button"
             title="{{ __('Code') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('code', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('code', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@
             type="button"
             title="{{ __('Code block') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('code-block', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code-block', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('code-block', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code-block', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@
     {{-- Content --}}
     <div
         x-ref="element"
-        class="prose prose-slate prose-a:text-blue-600 hover:prose-a:text-blue-500 sm:prose-sm max-w-none dark:prose-invert dark:prose-a:text-blue-400 dark:hover:prose-a:text-blue-300"
+        class="prose prose-slate prose-a:text-black-600 hover:prose-a:text-black-500 sm:prose-sm max-w-none dark:prose-invert dark:prose-a:text-black-400 dark:hover:prose-a:text-black-300"
     ></div>
     {{ $slot }}
 </div>

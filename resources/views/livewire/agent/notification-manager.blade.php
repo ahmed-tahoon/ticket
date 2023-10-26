@@ -8,14 +8,14 @@
                 <button
                     wire:click="$set('isUnRead', false)"
                     type="button"
-                    @class(['relative inline-flex items-center rounded-l-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500', 'bg-white hover:bg-slate-50 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-blue-400 dark:focus:border-blue-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800' => $isUnRead, 'bg-slate-100' => !$isUnRead])
+                    @class(['relative inline-flex items-center rounded-l-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 focus:z-10 focus:border-black-500 focus:outline-none focus:ring-1 focus:ring-black-500', 'bg-white hover:bg-slate-50 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-black-400 dark:focus:border-black-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800' => $isUnRead, 'bg-slate-100' => !$isUnRead])
                 >
                     {{ __('All') }}
                 </button>
                 <button
                     wire:click="$set('isUnRead', true)"
                     type="button"
-                    @class(['relative -ml-px inline-flex items-center rounded-r-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500', 'bg-white hover:bg-slate-50 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-blue-400 dark:focus:border-blue-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800' => !$isUnRead, 'bg-slate-100' => $isUnRead])
+                    @class(['relative -ml-px inline-flex items-center rounded-r-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 focus:z-10 focus:border-black-500 focus:outline-none focus:ring-1 focus:ring-black-500', 'bg-white hover:bg-slate-50 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-black-400 dark:focus:border-black-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800' => !$isUnRead, 'bg-slate-100' => $isUnRead])
                 >
                     {{ __('Unread') }}
                 </button>
@@ -74,7 +74,7 @@
                                                     @if($notifications->total() > $notifications->count())
                                                         <button
                                                             wire:click="$toggle('selectAll')"
-                                                            class="text-blue-600 hover:text-blue-500"
+                                                            class="text-black-600 hover:text-black-500"
                                                         >
                                                             {{ $selectAll ? __('Clear selection') : __('Select all :count notifications', ['count' => $notifications->total()]) }}
                                                         </button>
@@ -98,7 +98,7 @@
                                         >
                                             <td class="relative w-8 px-6 sm:px-8">
                                                 @if(in_array($notification->id, $selected))
-                                                    <div class="absolute inset-y-0 left-0 w-0.5 bg-blue-500 dark:bg-blue-400"></div>
+                                                    <div class="absolute inset-y-0 left-0 w-0.5 bg-black-500 dark:bg-black-400"></div>
                                                 @endif
                                                 <x-checkbox
                                                     wire:model="selected"
@@ -129,7 +129,7 @@
                                                             wire:click="markNotificationAsUnRead('{{ $notification->id }}')"
                                                             type="button"
                                                             title="{{ __('Mark as read') }}"
-                                                            class="p-1 rounded-md relative hover:bg-slate-200 hover:text-blue-500 dark:hover:bg-slate-600"
+                                                            class="p-1 rounded-md relative hover:bg-slate-200 hover:text-black-500 dark:hover:bg-slate-600"
                                                         >
                                                             <x-heroicon-m-eye-slash class="h-4 w-4" />
                                                             <span class="sr-only">{{ __('Mark as read') }}</span>
@@ -139,7 +139,7 @@
                                                             wire:click="markNotificationAsRead('{{ $notification->id }}')"
                                                             type="button"
                                                             title="{{ __('Mark as read') }}"
-                                                            class="p-1 rounded-md relative hover:bg-slate-200 hover:text-blue-500 dark:hover:bg-slate-600"
+                                                            class="p-1 rounded-md relative hover:bg-slate-200 hover:text-black-500 dark:hover:bg-slate-600"
                                                         >
                                                             <x-heroicon-m-eye class="h-4 w-4" />
                                                             <span class="sr-only">{{ __('Mark as read') }}</span>

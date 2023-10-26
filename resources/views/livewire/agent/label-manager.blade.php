@@ -116,7 +116,7 @@
                                         <button
                                             wire:click="generateLabelColor"
                                             type="button"
-                                            class="inline-flex items-center border border-slate-200 rounded px-2 text-sm font-sans font-medium text-slate-400 hover:bg-blue-500 hover:border-blue-500 hover:text-white dark:border-slate-500 dark:hover:border-blue-500"
+                                            class="inline-flex items-center border border-slate-200 rounded px-2 text-sm font-sans font-medium text-slate-400 hover:bg-black-500 hover:border-black-500 hover:text-white dark:border-slate-500 dark:hover:border-black-500"
                                         >
                                             <x-heroicon-o-arrow-path class="w-4 h-4" />
                                         </button>
@@ -236,7 +236,7 @@
                                                                 wire:click="editLabel({{ $label->id }})"
                                                                 type="button"
                                                                 title="{{ __('Edit label') }}"
-                                                                class="hover:text-blue-500"
+                                                                class="hover:text-black-500"
                                                             >
                                                                 <x-heroicon-m-pencil-square class="h-4 w-4" />
                                                                 <span class="sr-only">{{ __('Edit') }}</span>
@@ -260,7 +260,7 @@
                                                                 x-on:click="confirmLabelDeletion = false"
                                                                 type="button"
                                                                 title="{{ __('Cancel') }}"
-                                                                class="text-blue-600 hover:text-blue-500 dark:hover:text-blue-400"
+                                                                class="text-black-600 hover:text-black-500 dark:hover:text-black-400"
                                                             >
                                                                 <x-heroicon-m-x-circle class="h-4 w-4" />
                                                                 <span class="sr-only">{{ __('Cancel') }}</span>

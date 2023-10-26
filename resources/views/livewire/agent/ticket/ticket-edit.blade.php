@@ -6,7 +6,7 @@
         <div class="justify-stretch mt-6 flex flex-shrink-0 flex-col-reverse space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-y-0 sm:space-x-3 sm:space-x-reverse md:mt-0 md:flex-row md:space-x-3">
             <a
                 href="{{ route('agent.tickets.details', $ticket) }}"
-                class="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-slate-700 bg-white border border-slate-300 leading-5 rounded-md hover:text-slate-500 focus:outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition dark:border-slate-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
+                class="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-slate-700 bg-white border border-slate-300 leading-5 rounded-md hover:text-slate-500 focus:outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 transition dark:border-slate-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
             >
                 {{ __('Back') }}
             </a>

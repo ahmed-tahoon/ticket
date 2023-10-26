@@ -37,7 +37,7 @@
                                         <button
                                             wire:click="$set('tokenEnabled', ! '{{ $tokenEnabled }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -48,7 +48,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $tokenEnabled, 'bg-slate-200' => ! $tokenEnabled])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $tokenEnabled, 'bg-slate-200' => ! $tokenEnabled])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -140,7 +140,7 @@
                                         <button
                                             wire:click="$set('oauthEnabled', !'{{ $oauthEnabled }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -151,7 +151,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $oauthEnabled, 'bg-slate-200' => ! $oauthEnabled])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $oauthEnabled, 'bg-slate-200' => ! $oauthEnabled])
                                             ></span>
                                             <span
                                                 aria-hidden="true"

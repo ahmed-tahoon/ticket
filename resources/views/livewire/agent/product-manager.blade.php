@@ -9,7 +9,7 @@
                     <button
                         wire:click="createProduct"
                         type="button"
-                        class="relative inline-flex items-center rounded-l-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-blue-400 dark:focus:border-blue-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800"
+                        class="relative inline-flex items-center rounded-l-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 focus:z-10 focus:border-black-500 focus:outline-none focus:ring-1 focus:ring-black-500 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-black-400 dark:focus:border-black-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800"
                     >
                         <x-heroicon-m-plus class="-ml-1 mr-2 w-4 h-4" />
                         {{ __('New product') }}
@@ -19,7 +19,7 @@
                             <x-slot:trigger>
                                 <button
                                     type="button"
-                                    class="relative inline-flex items-center rounded-r-md border border-slate-300 bg-white px-2 py-2 text-sm font-medium text-slate-500 hover:bg-slate-50 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-blue-400 dark:focus:border-blue-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800"
+                                    class="relative inline-flex items-center rounded-r-md border border-slate-300 bg-white px-2 py-2 text-sm font-medium text-slate-500 hover:bg-slate-50 focus:z-10 focus:border-black-500 focus:outline-none focus:ring-1 focus:ring-black-500 dark:bg-slate-700 dark:border-slate-500 dark:text-slate-200 dark:focus:ring-black-400 dark:focus:border-black-400 dark:hover:border-slate-400 dark:focus:ring-offset-slate-800"
                                 >
                                     <span class="sr-only">{{ __('Open options') }}</span>
                                     <x-heroicon-m-chevron-down class="h-5 w-5" />
@@ -189,7 +189,7 @@
                                                             </span>
                                                         </div>
                                                         @if($productManagers->contains('id', $agent->id))
-                                                            <span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                                                            <span class="text-black-600 absolute inset-y-0 right-0 flex items-center pr-4">
                                                                 <x-heroicon-m-check class="w-5 h-5" />
                                                             </span>
                                                         @endif
@@ -205,12 +205,12 @@
 
                                     <ul class="mt-2">
                                         @foreach($productManagers as $agent)
-                                            <li class="inline-flex items-center rounded-full bg-blue-100 py-0.5 pl-2 pr-0.5 text-xs font-medium text-blue-700">
+                                            <li class="inline-flex items-center rounded-full bg-black-100 py-0.5 pl-2 pr-0.5 text-xs font-medium text-black-700">
                                                 {{ $agent['name'] }}
                                                 <button
                                                     wire:click.prevent="deleteProductManager({{ $agent['id'] }})"
                                                     type="button"
-                                                    class="ml-0.5 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:bg-blue-500 focus:text-white focus:outline-none"
+                                                    class="ml-0.5 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-black-400 hover:bg-black-200 hover:text-black-500 focus:bg-black-500 focus:text-white focus:outline-none"
                                                 >
                                                     <span class="sr-only">{{ __('Remove :agent', ['agent' => $agent['name']]) }}</span>
                                                     <x-heroicon-o-x-mark class="w-3 h-3 fill-current" />
@@ -271,7 +271,7 @@
                                                             </span>
                                                         </div>
                                                         @if($ticketAssignees->contains('id', $agent->id))
-                                                            <span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                                                            <span class="text-black-600 absolute inset-y-0 right-0 flex items-center pr-4">
                                                                 <x-heroicon-m-check class="w-5 h-5" />
                                                             </span>
                                                         @endif
@@ -287,12 +287,12 @@
 
                                     <ul class="mt-2">
                                         @foreach($ticketAssignees as $agent)
-                                            <li class="inline-flex items-center rounded-full bg-blue-100 py-0.5 pl-2 pr-0.5 text-xs font-medium text-blue-700">
+                                            <li class="inline-flex items-center rounded-full bg-black-100 py-0.5 pl-2 pr-0.5 text-xs font-medium text-black-700">
                                                 {{ $agent['name'] }}
                                                 <button
                                                     wire:click.prevent="deleteTicketAssignee({{ $agent['id'] }})"
                                                     type="button"
-                                                    class="ml-0.5 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:bg-blue-500 focus:text-white focus:outline-none"
+                                                    class="ml-0.5 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-black-400 hover:bg-black-200 hover:text-black-500 focus:bg-black-500 focus:text-white focus:outline-none"
                                                 >
                                                     <span class="sr-only">{{ __('Remove :agent', ['agent' => $agent['name']]) }}</span>
                                                     <x-heroicon-o-x-mark class="w-3 h-3 fill-current" />
@@ -406,7 +406,7 @@
                                                         <div class="ml-4">
                                                             <a
                                                                 href="{{ route('agent.tickets.list', ['product' => $product->id]) }}"
-                                                                class="hover:text-blue-500 hover:underline dark:hover:text-blue-400"
+                                                                class="hover:text-black-500 hover:underline dark:hover:text-black-400"
                                                             >
                                                                 {{ $product->name }}
                                                             </a>
@@ -444,7 +444,7 @@
                                                     <button
                                                         wire:click="toggleSupport({{ $product->id }})"
                                                         type="button"
-                                                        class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-700"
+                                                        class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-700"
                                                     >
                                                         <span class="sr-only">{{ __('Toggle support status') }}</span>
                                                         <span
@@ -453,7 +453,7 @@
                                                         ></span>
                                                         <span
                                                             aria-hidden="true"
-                                                            @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-slate-200' => $product->is_disabled, 'bg-blue-600' => ! $product->is_disabled])
+                                                            @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-slate-200' => $product->is_disabled, 'bg-black-600' => ! $product->is_disabled])
                                                         ></span>
                                                         <span
                                                             aria-hidden="true"
@@ -475,7 +475,7 @@
                                                                 wire:click="editProduct({{ $product->id }})"
                                                                 type="button"
                                                                 title="{{ __('Edit product') }}"
-                                                                class="hover:text-blue-500"
+                                                                class="hover:text-black-500"
                                                             >
                                                                 <x-heroicon-m-pencil-square class="h-4 w-4" />
                                                                 <span class="sr-only">{{ __('Edit') }}</span>
@@ -499,7 +499,7 @@
                                                                 x-on:click="confirmProductDeletion = false"
                                                                 type="button"
                                                                 title="{{ __('Cancel') }}"
-                                                                class="text-blue-600 hover:text-blue-500"
+                                                                class="text-black-600 hover:text-black-500"
                                                             >
                                                                 <x-heroicon-m-x-circle class="h-4 w-4" />
                                                                 <span class="sr-only">{{ __('Cancel') }}</span>
@@ -588,7 +588,7 @@
                                 <div class="flex-1 min-w-0">
                                     <a
                                         href="{{ $envatoProducts['url'] }}"
-                                        class="block text-sm font-medium text-slate-900 truncate hover:text-blue-500 hover:underline dark:text-slate-200 dark:hover:text-blue-400"
+                                        class="block text-sm font-medium text-slate-900 truncate hover:text-black-500 hover:underline dark:text-slate-200 dark:hover:text-black-400"
                                         target="_blank"
                                     >
                                         {{ $envatoProducts['item'] }}

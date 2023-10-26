@@ -75,7 +75,7 @@
                                         <button
                                             x-on:click="isUpdating = true"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Update') }}
                                         </button>
@@ -97,7 +97,7 @@
                                         <button
                                             x-on:click="isUpdating = false"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Cancel') }}
                                         </button>
@@ -107,7 +107,7 @@
                                         >|</span>
                                         <button
                                             type="submit"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Save') }}
                                         </button>
@@ -139,7 +139,7 @@
                                         <button
                                             x-on:click="isUpdating = true"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Update') }}
                                         </button>
@@ -161,7 +161,7 @@
                                         <button
                                             x-on:click="isUpdating = false"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Cancel') }}
                                         </button>
@@ -171,7 +171,7 @@
                                         >|</span>
                                         <button
                                             type="submit"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Save') }}
                                         </button>
@@ -215,7 +215,7 @@
                                     <button
                                         x-on:click="$refs.photoInput.click()"
                                         type="button"
-                                        class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                        class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                     >
                                         {{ $this->avatar ? __('Change') : __('Update') }}
                                     </button>
@@ -227,7 +227,7 @@
                                         <button
                                             wire:click="updateUserPhoto"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Save') }}
                                         </button>
@@ -240,7 +240,7 @@
                                         <button
                                             wire:click="removeUserPhoto"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Remove') }}
                                         </button>
@@ -268,7 +268,7 @@
                                         <button
                                             x-on:click="isUpdating = true"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Update') }}
                                         </button>
@@ -290,7 +290,7 @@
                                         <button
                                             x-on:click="isUpdating = false"
                                             type="button"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Cancel') }}
                                         </button>
@@ -300,7 +300,7 @@
                                         >|</span>
                                         <button
                                             type="submit"
-                                            class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-blue-400 dark:hover:text-blue-300 dark:focus:ring-offset-slate-800"
+                                            class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-black-400 dark:hover:text-black-300 dark:focus:ring-offset-slate-800"
                                         >
                                             {{ __('Save') }}
                                         </button>
@@ -326,7 +326,7 @@
                     @if($this->submittedTickets->count())
                         <a
                             href="{{ route('agent.tickets.list', ['author' => $user->id]) }}"
-                            class="font-medium text-sm text-blue-600 hover:text-blue-500 dark:text-slate-300 dark:hover:text-slate-200"
+                            class="font-medium text-sm text-black-600 hover:text-black-500 dark:text-slate-300 dark:hover:text-slate-200"
                         >
                             {{ __('View all') }}
                         </a>
@@ -341,7 +341,7 @@
                                 <li class="relative px-4 py-2 text-sm sm:px-6 hover:bg-slate-50 dark:hover:bg-slate-700/25">
                                     <a
                                         href="{{ route('agent.tickets.details', $ticket) }}"
-                                        class="font-medium text-slate-700 truncate hover:text-blue-500 hover:underline dark:text-slate-200 dark:hover:text-blue-400"
+                                        class="font-medium text-slate-700 truncate hover:text-black-500 hover:underline dark:text-slate-200 dark:hover:text-black-400"
                                     >
                                         {{ $ticket->subject }}
                                     </a>

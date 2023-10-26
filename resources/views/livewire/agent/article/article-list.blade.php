@@ -75,7 +75,7 @@
                                             <td class="whitespace-nowrap pl-4 py-4 sm:pl-6 font-medium text-sm text-slate-900 dark:text-slate-200">
                                                 <a
                                                     href="{{ route('agent.articles.details', $article) }}"
-                                                    class="hover:text-blue-500 hover:underline dark:hover:text-blue-400"
+                                                    class="hover:text-black-500 hover:underline dark:hover:text-black-400"
                                                 >
                                                     {{ $article->title }}
                                                 </a>

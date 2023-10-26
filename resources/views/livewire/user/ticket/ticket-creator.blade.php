@@ -16,7 +16,7 @@
             <div class="divide-y divide-slate-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
                 @include('layouts.navigation-user')
 
-                <div class="lg:col-span-9 min-h-[500px]">
+                <div class="lg:col-span-12 min-h-[500px]">
                     <div class="border-b border-slate-200 pl-4 pr-6 pt-4 pb-4 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6">
                         <div class="flex items-center">
                             <h1 class="flex-1 font-display text-lg">
@@ -44,7 +44,7 @@
                                             <x-slot:trigger>
                                                 <button
                                                     type="button"
-                                                    class="relative w-full cursor-default rounded-md border border-slate-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                                    class="relative w-full cursor-default rounded-md border border-slate-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-black-500 focus:outline-none focus:ring-1 focus:ring-black-500 sm:text-sm"
                                                 >
                                                     @if($selectedProduct)
                                                         <span class="flex items-center">
@@ -88,7 +88,7 @@
                                                                 <span @class(['ml-3 block truncate', 'font-semibold' => $selectedProduct?->id == $product->id, 'font-normal' => $selectedProduct?->id != $product->id])>{{ $product->name }}</span>
                                                             </div>
                                                             @if($selectedProduct?->id == $product->id)
-                                                                <span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                                                                <span class="text-black-600 absolute inset-y-0 right-0 flex items-center pr-4">
                                                                     <x-heroicon-m-check class="h-5 w-5" />
                                                                 </span>
                                                             @endif
@@ -124,7 +124,7 @@
                                             <x-slot:trigger>
                                                 <button
                                                     type="button"
-                                                    class="relative w-full cursor-default rounded-md border border-slate-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                                                    class="relative w-full cursor-default rounded-md border border-slate-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-black-500 focus:outline-none focus:ring-1 focus:ring-black-500 sm:text-sm"
                                                 >
                                                     @if($selectedCategory)
                                                         <span class="block truncate">{{ $selectedCategory->name }}</span>
@@ -148,7 +148,7 @@
                                                                 <span @class(['block truncate', 'font-semibold' => $selectedCategory?->id == $category->id, 'font-normal' => $selectedCategory?->id != $category->id])>{{ $category->name }}</span>
                                                             </div>
                                                             @if($selectedCategory?->id == $category->id)
-                                                                <span class="text-blue-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                                                                <span class="text-black-600 absolute inset-y-0 right-0 flex items-center pr-4">
                                                                     <x-heroicon-m-check class="h-5 w-5" />
                                                                 </span>
                                                             @endif
@@ -225,7 +225,7 @@
                                                         <button
                                                             wire:click="$set('ticket.license_code', '{{ $purchase['code'] }}')"
                                                             type="button"
-                                                            class="font-medium text-blue-600 hover:text-blue-500"
+                                                            class="font-medium text-black-600 hover:text-black-500"
                                                         >
                                                             {{ __('Use') }}
                                                         </button>
@@ -337,7 +337,7 @@
                                         <a
                                             @click="$refs.fileInput.click()"
                                             role="button"
-                                            class="inline-flex items-center text-sm text-blue-600 hover:text-blue-500"
+                                            class="inline-flex items-center text-sm text-black-600 hover:text-black-500"
                                         >
                                             <x-heroicon-o-paper-clip class="mr-1 w-4 h-4" />
                                             {{ __('Add attachment') }}

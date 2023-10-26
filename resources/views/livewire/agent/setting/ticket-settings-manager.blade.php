@@ -38,7 +38,7 @@
                                         <button
                                             wire:click="$set('allowAssignmentToAdmins', ! '{{ $allowAssignmentToAdmins }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -49,7 +49,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $allowAssignmentToAdmins, 'bg-slate-200' => ! $allowAssignmentToAdmins])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $allowAssignmentToAdmins, 'bg-slate-200' => ! $allowAssignmentToAdmins])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -74,7 +74,7 @@
                                         <button
                                             wire:click="$set('allowAgentToAssignTicket', ! '{{ $allowAgentToAssignTicket }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -85,7 +85,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $allowAgentToAssignTicket, 'bg-slate-200' => ! $allowAgentToAssignTicket])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $allowAgentToAssignTicket, 'bg-slate-200' => ! $allowAgentToAssignTicket])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -115,7 +115,7 @@
                                         <button
                                             wire:click="$set('allowAgentToResignTicket', ! '{{ $allowAgentToResignTicket }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -126,7 +126,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $allowAgentToResignTicket, 'bg-slate-200' => ! $allowAgentToResignTicket])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $allowAgentToResignTicket, 'bg-slate-200' => ! $allowAgentToResignTicket])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -151,7 +151,7 @@
                                         <button
                                             wire:click="$set('autoAssignmentEnabled', ! '{{ $autoAssignmentEnabled }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -162,7 +162,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $autoAssignmentEnabled, 'bg-slate-200' => ! $autoAssignmentEnabled])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $autoAssignmentEnabled, 'bg-slate-200' => ! $autoAssignmentEnabled])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -187,7 +187,7 @@
                                         <button
                                             wire:click="$set('autoAssignmentUseRandomAgent', ! '{{ $autoAssignmentUseRandomAgent }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -198,7 +198,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $autoAssignmentUseRandomAgent, 'bg-slate-200' => ! $autoAssignmentUseRandomAgent])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $autoAssignmentUseRandomAgent, 'bg-slate-200' => ! $autoAssignmentUseRandomAgent])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -228,7 +228,7 @@
                                         <button
                                             wire:click="$set('allowAgentToSeeLicenseCode', ! '{{ $allowAgentToSeeLicenseCode }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -239,7 +239,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $allowAgentToSeeLicenseCode, 'bg-slate-200' => ! $allowAgentToSeeLicenseCode])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $allowAgentToSeeLicenseCode, 'bg-slate-200' => ! $allowAgentToSeeLicenseCode])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -376,7 +376,7 @@
                                                 <button
                                                     wire:click="editCustomField({{ $field->id }})"
                                                     type="button"
-                                                    class="rounded-md bg-transparent font-medium text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-400"
+                                                    class="rounded-md bg-transparent font-medium text-black-600 hover:text-black-500 dark:text-black-500 dark:hover:text-black-400"
                                                 >
                                                     {{ __('Update') }}
                                                 </button>

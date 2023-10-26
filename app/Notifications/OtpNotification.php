@@ -43,9 +43,12 @@ class OtpNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
+        ->subject('Login OTP for Grand Automation  Support Portal')
         ->line('Your One-Time Password (OTP) is: ' . $this->otp)
         ->line('This OTP is valid for the next 30 minutes.')
         ->line('Thank you for using our service.');
+
+        
     }
 
     /**

@@ -49,7 +49,7 @@
                 <div
                     x-on:blur="content = $event.target.innerHTML"
                     contenteditable="true"
-                    class="block w-full border-0 border-b border-dotted border-transparent font-display font-medium text-5xl text-center p-0 focus:border-blue-600 focus:outline-none dark:bg-transparent dark:placeholder-slate-400 dark:text-slate-200 dark:focus:border-blue-400 dark:focus:placeholder-slate-500"
+                    class="block w-full border-0 border-b border-dotted border-transparent font-display font-medium text-5xl text-center p-0 focus:border-black-600 focus:outline-none dark:bg-transparent dark:placeholder-slate-400 dark:text-slate-200 dark:focus:border-black-400 dark:focus:placeholder-slate-500"
                 >
                     {{ $article->title }}
                 </div>
@@ -82,7 +82,7 @@
                                 <button
                                     wire:click="generateSlug"
                                     type="button"
-                                    class="inline-flex items-center border border-slate-200 rounded px-2 text-sm font-sans font-medium text-slate-400 hover:bg-blue-500 hover:border-blue-500 hover:text-white dark:border-slate-500 dark:hover:border-blue-500"
+                                    class="inline-flex items-center border border-slate-200 rounded px-2 text-sm font-sans font-medium text-slate-400 hover:bg-black-500 hover:border-black-500 hover:text-white dark:border-slate-500 dark:hover:border-black-500"
                                     data-tippy-content="{{ __('Generate slug') }}"
                                 >
                                     <x-heroicon-o-arrow-path class="w-3 h-3" />
@@ -277,7 +277,7 @@
                             <div class="flex justify-center text-sm text-slate-600">
                                 <label
                                     for="media-upload"
-                                    class="relative cursor-pointer rounded-md bg-white font-medium text-blue-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 hover:text-blue-500"
+                                    class="relative cursor-pointer rounded-md bg-white font-medium text-black-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-black-500 focus-within:ring-offset-2 hover:text-black-500"
                                 >
                                     <span>{{ __('Upload a file') }}</span>
                                     <input
@@ -302,7 +302,7 @@
                             <li class="relative">
                                 <div
                                     class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-slate-100 overflow-hidden"
-                                    :class="{ 'ring-2 ring-offset-2 ring-blue-500 dark:ring-offset-slate-800': selectedMedia === {{ $media->id }} }"
+                                    :class="{ 'ring-2 ring-offset-2 ring-black-500 dark:ring-offset-slate-800': selectedMedia === {{ $media->id }} }"
                                 >
                                     @if(str_contains($media->mime_type, 'image'))
                                         <img
@@ -364,7 +364,7 @@
                                     <div class="flex text-sm text-slate-600">
                                         <label
                                             for="media-upload"
-                                            class="relative cursor-pointer rounded-md bg-white font-medium text-blue-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 hover:text-blue-500"
+                                            class="relative cursor-pointer rounded-md bg-white font-medium text-black-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-black-500 focus-within:ring-offset-2 hover:text-black-500"
                                         >
                                             <span class="sr-only">{{ __('Upload a file') }}</span>
                                             <input

@@ -38,7 +38,7 @@
                                         <button
                                             wire:click="$set('sendTicketConfirmationToAdmins', ! '{{ $sendTicketConfirmationToAdmins }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -49,7 +49,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $sendTicketConfirmationToAdmins, 'bg-slate-200' => ! $sendTicketConfirmationToAdmins])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $sendTicketConfirmationToAdmins, 'bg-slate-200' => ! $sendTicketConfirmationToAdmins])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -74,7 +74,7 @@
                                         <button
                                             wire:click="$set('sendTicketConfirmationToProductManagers', ! '{{ $sendTicketConfirmationToProductManagers }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -85,7 +85,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $sendTicketConfirmationToProductManagers, 'bg-slate-200' => ! $sendTicketConfirmationToProductManagers])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $sendTicketConfirmationToProductManagers, 'bg-slate-200' => ! $sendTicketConfirmationToProductManagers])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -110,7 +110,7 @@
                                         <button
                                             wire:click="$set('sendTicketConfirmationToTicketAssignees', ! '{{ $sendTicketConfirmationToTicketAssignees }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -121,7 +121,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $sendTicketConfirmationToTicketAssignees, 'bg-slate-200' => ! $sendTicketConfirmationToTicketAssignees])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $sendTicketConfirmationToTicketAssignees, 'bg-slate-200' => ! $sendTicketConfirmationToTicketAssignees])
                                             ></span>
                                             <span
                                                 aria-hidden="true"

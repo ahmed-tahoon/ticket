@@ -13,7 +13,7 @@
             type="button"
             @click="setParagraph()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('paragraph', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('paragraph', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('paragraph', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('paragraph', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@
             type="button"
             @click="toggleBold()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('bold', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bold', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('bold', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bold', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@
             type="button"
             @click="toggleItalic()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('italic', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('italic', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('italic', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('italic', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@
             type="button"
             @click="toggleUnderline()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('underline', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('underline', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('underline', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('underline', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@
             type="button"
             @click="toggleHeading(2)"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('heading', { level: 2 }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('heading', { level: 2 }, updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('heading', { level: 2 }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('heading', { level: 2 }, updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +123,7 @@
             type="button"
             @click="toggleHeading(3)"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('heading', { level: 3 }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('heading', { level: 3 }, updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('heading', { level: 3 }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('heading', { level: 3 }, updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@
             type="button"
             @click="toggleHeading(4)"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('heading', { level: 4 }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('heading', { level: 4 }, updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('heading', { level: 4 }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('heading', { level: 4 }, updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@
             type="button"
             @click="toggleBulletList()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('bulletList', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bulletList', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('bulletList', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('bulletList', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +189,7 @@
             type="button"
             @click="toggleOrderedList()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('orderedList', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('orderedList', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('orderedList', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('orderedList', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +211,7 @@
             type="button"
             @click="setTextAlign('left')"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive({ textAlign: 'left' }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive({ textAlign: 'left' }, updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive({ textAlign: 'left' }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive({ textAlign: 'left' }, updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +233,7 @@
             type="button"
             @click="setTextAlign('center')"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive({ textAlign: 'center' }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive({ textAlign: 'center' }, updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive({ textAlign: 'center' }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive({ textAlign: 'center' }, updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +255,7 @@
             type="button"
             @click="setTextAlign('right')"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive({ textAlign: 'right' }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive({ textAlign: 'right' }, updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive({ textAlign: 'right' }, updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive({ textAlign: 'right' }, updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -278,7 +278,7 @@
             type="button"
             title="{{ __('Code') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('code', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('code', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -295,7 +295,7 @@
             type="button"
             title="{{ __('Code block') }}"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('code-block', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code-block', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('code-block', updatedAt), 'hover:bg-slate-100 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('code-block', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +310,7 @@
             type="button"
             @click="toggleLink()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('link', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('link', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('link', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('link', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -332,7 +332,7 @@
             type="button"
             @click="toggleBlockquote()"
             class="inline-flex items-center justify-center p-2 rounded-md border border-slate-200"
-            :class="{ 'bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 dark:hover:bg-blue-500 dark:hover:border-blue-500': isActive('blockquote', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('blockquote', updatedAt) }"
+            :class="{ 'bg-black-600 text-white border-black-600 hover:bg-black-700 hover:border-black-700 dark:hover:bg-black-500 dark:hover:border-black-500': isActive('blockquote', updatedAt), 'hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-600 dark:hover:text-slate-200': !isActive('blockquote', updatedAt) }"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -394,6 +394,6 @@
     </div>
     <div
         x-ref="element"
-        class="prose prose-slate max-w-none sm:prose-sm md:prose-base prose-a:text-blue-500 hover:prose-a:text-blue-400 dark:prose-invert dark:prose-a:text-blue-400 dark:hover:prose-a:text-blue-300"
+        class="prose prose-slate max-w-none sm:prose-sm md:prose-base prose-a:text-black-500 hover:prose-a:text-black-400 dark:prose-invert dark:prose-a:text-black-400 dark:hover:prose-a:text-black-300"
     ></div>
 </div>

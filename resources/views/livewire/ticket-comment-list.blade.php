@@ -273,13 +273,13 @@
                                             {{ $comment->created_at->diffForHumans() }}
                                         </time>
                                         @if($comment->is_private)
-                                            <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">
+                                            <span class="inline-flex items-center rounded-full bg-black-100 px-2.5 py-0.5 text-xs font-medium text-black-800">
                                                 {{ __('Private') }}
                                             </span>
                                         @endif
                                     </p>
                                 </div>
-                                <div class="mt-2 max-w-none prose prose-slate break-words prose-a:text-blue-600 hover:prose-a:text-blue-500 sm:prose-sm dark:prose-invert dark:prose-a:text-blue-400 dark:hover:prose-a:text-blue-300">
+                                <div class="mt-2 max-w-none prose prose-slate break-words prose-a:text-black-600 hover:prose-a:text-black-500 sm:prose-sm dark:prose-invert dark:prose-a:text-black-400 dark:hover:prose-a:text-black-300">
                                     <p>{!! $comment->content !!}</p>
                                 </div>
                                 @if($comment->hasMedia('attachments'))

@@ -52,7 +52,7 @@
                     @if(!empty($articles))
                         <ul class="max-h-72 py-2 overflow-y-auto text-sm text-slate-800">
                             @foreach($articles as $article)
-                                <li class="relative px-4 py-2 hover:bg-blue-600 hover:text-white focus-within:bg-blue-600 focus-within:text-white">
+                                <li class="relative px-4 py-2 hover:bg-black-600 hover:text-white focus-within:bg-black-600 focus-within:text-white">
                                     <a
                                         href="{{ route('guest.article-details', $article['slug']) }}"
                                         class="focus:outline-none"
@@ -68,7 +68,7 @@
                             {{ __('There were no results matching your keyword.') }}
                             <a
                                 href="{{ route('user.tickets.create') }}"
-                                class="text-blue-500 hover:text-blue-600"
+                                class="text-black-500 hover:text-black-600"
                             >
                                 {{ __('Submit a new ticket') }}
                             </a>
@@ -86,7 +86,7 @@
                         <li>
                             <button
                                 x-on:click="open = true; $refs.searchInput.focus(); $wire.set('query', '{{ $keyword }}');"
-                                class="hover:text-blue-100"
+                                class="hover:text-black-100"
                             >
                                 {{ $keyword }}
                             </button>

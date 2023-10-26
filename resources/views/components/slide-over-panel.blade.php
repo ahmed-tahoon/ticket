@@ -55,7 +55,7 @@
                                         <button
                                             x-on:click="show = false"
                                             type="button"
-                                            class="rounded-md text-slate-400 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:hover:text-slate-300"
+                                            class="rounded-md text-slate-400 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:hover:text-slate-300"
                                         >
                                             <span class="sr-only">{{ __('Close panel') }}</span>
                                             <x-heroicon-m-x-mark class="h-5 w-5" />

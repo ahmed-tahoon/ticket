@@ -44,7 +44,7 @@
                 <div class="p-4">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
-                            <x-heroicon-o-information-circle class="w-6 h-6 text-blue-400" />
+                            <x-heroicon-o-information-circle class="w-6 h-6 text-black-400" />
                         </div>
                         <div class="ml-3 flex w-0 flex-1 justify-between">
                             <p
@@ -55,7 +55,7 @@
                                 <button
                                     x-on:click="remove(message)"
                                     type="button"
-                                    class="inline-flex rounded-md text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:hover:text-slate-300"
+                                    class="inline-flex rounded-md text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:hover:text-slate-300"
                                 >
                                     <span class="sr-only">{{ __('Close') }}</span>
                                     <x-heroicon-m-x-mark class="h-5 w-5" />

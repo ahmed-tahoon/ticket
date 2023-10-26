@@ -30,7 +30,7 @@
                         <button
                             @click="activeTab = 'profile'"
                             class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                            :class="{ 'border-blue-500 text-blue-600 dark:border-slate-200 dark:text-slate-200': activeTab === 'profile', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300': activeTab !== 'profile' }"
+                            :class="{ 'border-black-500 text-black-600 dark:border-slate-200 dark:text-slate-200': activeTab === 'profile', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300': activeTab !== 'profile' }"
                         >
                             {{ __('Profile') }}
                         </button>
@@ -38,7 +38,7 @@
                         <button
                             @click="activeTab = 'password'"
                             class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-                            :class="{ 'border-blue-500 text-blue-600 dark:border-slate-200 dark:text-slate-200': activeTab === 'password', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300': activeTab !== 'password' }"
+                            :class="{ 'border-black-500 text-black-600 dark:border-slate-200 dark:text-slate-200': activeTab === 'password', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300': activeTab !== 'password' }"
                         >
                             {{ __('Password') }}
                         </button>

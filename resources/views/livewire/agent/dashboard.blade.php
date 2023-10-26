@@ -361,7 +361,7 @@
                                     </h3>
                                     <a
                                         href="{{ route('agent.tickets.list', ['status' => 'open']) }}"
-                                        class="ml-3 flex-shrink-0 text-sm text-blue-600 hover:text-blue-500 dark:text-slate-300 dark:hover:text-slate-200"
+                                        class="ml-3 flex-shrink-0 text-sm text-black-600 hover:text-black-500 dark:text-slate-300 dark:hover:text-slate-200"
                                     >
                                         {{ __('View all') }}
                                     </a>
@@ -397,7 +397,7 @@
                                                             <td class="whitespace-nowrap py-3.5 px-3 text-sm font-medium text-slate-900 dark:text-slate-200">
                                                                 <a
                                                                     href="{{ route('agent.tickets.details', $ticket) }}"
-                                                                    class="hover:text-blue-500 hover:underline dark:hover:text-blue-400"
+                                                                    class="hover:text-black-500 hover:underline dark:hover:text-black-400"
                                                                 >
                                                                     {{ $ticket->subject }}
                                                                 </a>

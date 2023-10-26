@@ -31,7 +31,7 @@
             aria-labelledby="quick-links-title"
             class="relative -mt-32 max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-5xl lg:px-8"
         >
-            <div class="rounded-lg bg-slate-200 overflow-hidden shadow-lg shadow-blue-500/50 divide-y divide-slate-200 sm:divide-y-0 sm:grid sm:grid-cols-3 md:grid-cols-2 sm:gap-px">
+            <div class="rounded-lg bg-slate-200 overflow-hidden shadow-lg shadow-black-500/50 divide-y divide-slate-200 sm:divide-y-0 sm:grid sm:grid-cols-3 md:grid-cols-2 sm:gap-px">
                 <h2
                     class="sr-only"
                     id="quick-links-title"
@@ -41,27 +41,9 @@
 
                 <div class="relative group bg-white p-6">
                     <div>
-                        <span class="rounded-lg inline-flex p-3 bg-blue-50 text-blue-700 ring-4 ring-white">
+                        <span class="rounded-lg inline-flex p-3 bg-blue-50 text-black-700 ring-4 ring-white">
                             <x-heroicon-o-academic-cap class="h-6 w-6" />
                         </span>
-                    </div>
-                    <div class="mt-8">
-                        <h3 class="font-display text-lg">
-                            <a
-                                href="{{ route('guest.collection-list') }}"
-                                class="focus:outline-none"
-                            >
-                                <!-- Extend touch target to entire panel -->
-                                <span
-                                    class="absolute inset-0"
-                                    aria-hidden="true"
-                                ></span>
-                                {{ __('Knowledge Base') }}
-                            </a>
-                        </h3>
-                        <p class="mt-2 text-sm text-slate-500">
-                            {{ __('Browse our knowledge base to find answers to your questions. You can also search for specific topics using our search form.') }}
-                        </p>
                     </div>
                     <span
                         class="pointer-events-none absolute top-6 right-6 text-slate-300 group-hover:text-slate-400"
@@ -73,7 +55,7 @@
 
                 <div class="relative group bg-white p-6">
                     <div>
-                        <span class="rounded-lg inline-flex p-3 bg-blue-50 text-blue-700 ring-4 ring-white">
+                        <span class="rounded-lg inline-flex p-3 bg-blue-50 text-black-700 ring-4 ring-white">
                             <x-heroicon-o-cursor-arrow-ripple class="h-6 w-6" />
                         </span>
                     </div>
@@ -124,7 +106,7 @@
             <div class="mt-20">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     @foreach($this->collections->take(4) as $collection)
-                        <x-card class="relative rounded-lg !ring-slate-200 hover:ring-blue-200 hover:shadow-lg hover:shadow-blue-500/50 transition">
+                        <x-card class="relative rounded-lg !ring-slate-200 hover:ring-black-200 hover:shadow-lg hover:shadow-black-500/50 transition">
                             <x-slot:header>
                                 <div class="flex items-center justify-between">
                                     <h3 class="font-display text-lg truncate">
@@ -132,7 +114,7 @@
                                     </h3>
                                     <a
                                         href="{{ route('guest.collection-details', $collection) }}"
-                                        class="ml-3 flex-shrink-0 text-sm text-blue-600 hover:text-blue-500"
+                                        class="ml-3 flex-shrink-0 text-sm text-black-600 hover:text-black-500"
                                     >
                                         {{ __('View all') }}
                                     </a>
@@ -147,15 +129,15 @@
                                         <li class="py-4">
                                             <a
                                                 href="{{ route('guest.article-details', $article) }}"
-                                                class="group inline-flex items-start text-sm text-slate-700 hover:text-blue-500"
+                                                class="group inline-flex items-start text-sm text-slate-700 hover:text-black-500"
                                             >
-                                                <x-heroicon-o-newspaper class="mr-2 mt-0.5 flex-shrink-0 h-4 w-4 text-slate-700 group-hover:text-blue-500" />
+                                                <x-heroicon-o-newspaper class="mr-2 mt-0.5 flex-shrink-0 h-4 w-4 text-slate-700 group-hover:text-black-500" />
                                                 {{ $article->title }}
                                             </a>
                                         </li>
                                     @endforeach
                                 </ul>
-                                <div class="absolute flex w-full bottom-0 -mb-px inset-x-0 h-[2px] bg-gradient-to-r from-blue-400/0 via-blue-400/50 to-blue-400/0"></div>
+                                <div class="absolute flex w-full bottom-0 -mb-px inset-x-0 h-[2px] bg-gradient-to-r from-black-400/0 via-black-400/50 to-black-400/0"></div>
                             </x-slot:content>
                         </x-card>
                     @endforeach
@@ -166,7 +148,7 @@
         <!-- Get in touch -->
         <section
             id="get-in-touch"
-            class="relative overflow-hidden bg-blue-600 py-32"
+            class="relative overflow-hidden bg-black-600 py-32"
         >
             <img
                 src="{{ asset('img/background-call-to-action.jpg') }}"
@@ -187,7 +169,7 @@
                     </p>
                     <a
                         href="{{ route('user.tickets.create') }}"
-                        class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white mt-10"
+                        class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-slate-900 hover:bg-blue-50 active:bg-black-200 active:text-slate-600 focus-visible:outline-white mt-10"
                     >
                         {{ __('Submit a ticket') }}
                         <svg
@@ -218,16 +200,7 @@
             aria-labelledby="faq-title"
             class="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
         >
-            <img
-                alt=""
-                src="{{ asset('img/background-faqs.jpg') }}"
-                width="1558"
-                height="946"
-                decoding="async"
-                data-nimg="future"
-                class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4"
-                loading="lazy"
-            >
+
             <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative">
                 <div class="mx-auto max-w-3xl lg:mx-0">
                     <h2

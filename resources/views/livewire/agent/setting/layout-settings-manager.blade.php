@@ -201,7 +201,7 @@
                                     <div class="mt-1 space-y-3 sm:col-span-2 sm:mt-0">
                                         @foreach($homepageFAQItems as $item)
                                             <div class="group isolate relative -space-y-px rounded-md shadow-sm">
-                                                <div class="relative rounded-md rounded-b-none border border-slate-300 px-3 py-2 focus-within:z-10 focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-slate-500 dark:text-slate-200 dark:focus-within:ring-blue-500 dark:focus-within:border-blue-500">
+                                                <div class="relative rounded-md rounded-b-none border border-slate-300 px-3 py-2 focus-within:z-10 focus-within:border-black-600 focus-within:ring-1 focus-within:ring-black-600 dark:border-slate-500 dark:text-slate-200 dark:focus-within:ring-black-500 dark:focus-within:border-black-500">
                                                     <x-label
                                                         for="questionInput[{{ $loop->index }}]"
                                                         :value="__('Question')"
@@ -216,7 +216,7 @@
                                                     />
                                                     <x-input-error for="homepageFAQItems.{{ $loop->index }}.question" />
                                                 </div>
-                                                <div class="relative rounded-md rounded-t-none border border-slate-300 px-3 py-2 focus-within:z-10 focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-slate-500 dark:text-slate-200 dark:focus-within:ring-blue-500 dark:focus-within:border-blue-500">
+                                                <div class="relative rounded-md rounded-t-none border border-slate-300 px-3 py-2 focus-within:z-10 focus-within:border-black-600 focus-within:ring-1 focus-within:ring-black-600 dark:border-slate-500 dark:text-slate-200 dark:focus-within:ring-black-500 dark:focus-within:border-black-500">
                                                     <x-label
                                                         for="answerInput[{{ $loop->index }}]"
                                                         :value="__('Answer')"

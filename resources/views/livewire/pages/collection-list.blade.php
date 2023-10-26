@@ -40,17 +40,6 @@
                 </div>
             </li>
 
-            <li>
-                <div class="flex items-center">
-                    <x-heroicon-m-chevron-right class="h-5 w-5 flex-shrink-0 text-slate-400" />
-                    <a
-                        href="{{ route('guest.collection-list') }}"
-                        class="ml-4 text-sm font-medium text-slate-500 hover:text-slate-700"
-                    >
-                        {{ __('All collections') }}
-                    </a>
-                </div>
-            </li>
         </ol>
     </nav>
 
@@ -74,7 +63,7 @@
                                 <h2>
                                     <a
                                         href="{{ route('guest.collection-details', $collection->slug) }}"
-                                        class="text-lg text-blue-600 hover:text-blue-500"
+                                        class="text-lg text-black-600 hover:text-black-500"
                                     >
                                         <span class="absolute inset-0"></span>
                                         {{ $collection->name }}

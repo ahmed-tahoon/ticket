@@ -117,7 +117,7 @@
                                 <div class="text-sm">
                                     <a
                                         href="{{ route('password.request') }}"
-                                        class="font-medium text-blue-600 hover:text-blue-500"
+                                        class="font-medium text-black-600 hover:text-black-500"
                                         tabindex="-1"
                                     >
                                         {{ __('Forgot your password?') }}

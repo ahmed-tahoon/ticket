@@ -11,11 +11,11 @@
 }
 
 .ProseMirror div.ProseMirror-selectednode {
-    @apply ring-2 ring-offset-2 ring-blue-400;
+    @apply ring-2 ring-offset-2 ring-black-400;
 }
 
 .ProseMirror img.ProseMirror-selectednode {
-    @apply ring-2 ring-offset-2 ring-blue-400;
+    @apply ring-2 ring-offset-2 ring-black-400;
 }
 
 .ProseMirror p.is-editor-empty:first-child::before {

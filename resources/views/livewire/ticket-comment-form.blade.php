@@ -20,7 +20,7 @@
                                     <button
                                         x-on:click="checked = !checked"
                                         type="button"
-                                        class="hidden group relative h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:inline-flex dark:focus:ring-offset-slate-800"
+                                        class="hidden group relative h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 sm:inline-flex dark:focus:ring-offset-slate-800"
                                     >
                                         <span
                                             aria-hidden="true"
@@ -29,7 +29,7 @@
                                         <span
                                             aria-hidden="true"
                                             class="pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out"
-                                            :class="{ 'bg-blue-600': checked, 'bg-slate-200': !checked }"
+                                            :class="{ 'bg-black-600': checked, 'bg-slate-200': !checked }"
                                         ></span>
                                         <span
                                             aria-hidden="true"
@@ -92,7 +92,7 @@
                                                     {{ __('No canned responses found!') }}
                                                     <a
                                                         href="{{ route('agent.canned-responses') }}"
-                                                        class="text-blue-600 hover:text-blue-500"
+                                                        class="text-black-600 hover:text-black-500"
                                                     >
                                                         {{ __('Create one') }}
                                                     </a>

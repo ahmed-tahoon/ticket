@@ -21,7 +21,7 @@
                                 wire:model="status"
                                 id="ticket-status"
                                 name="ticket-status"
-                                class="block w-full focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md dark:border-slate-600"
+                                class="block w-full focus:ring-black-500 focus:border-black-500 border-slate-300 rounded-md dark:border-slate-600"
                             >
                                 <option value="">
                                     {{ __('All') }}
@@ -42,7 +42,7 @@
                                     <button
                                         wire:click="$set('status', null)"
                                         type="button"
-                                        @class(['whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300' => $status, 'border-blue-500 text-blue-600 dark:border-slate-200 dark:text-slate-200' => !$status])
+                                        @class(['whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300' => $status, 'border-black-500 text-black-600 dark:border-slate-200 dark:text-slate-200' => !$status])
                                     >
                                         {{ __('All') }}
                                     </button>
@@ -50,7 +50,7 @@
                                         <button
                                             wire:click="$set('status', '{{ $ticketStatus->value }}')"
                                             type="button"
-                                            @class(['whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300' => $status !== $ticketStatus->value, 'border-blue-500 text-blue-600 dark:border-slate-200 dark:text-slate-200' => $status === $ticketStatus->value])
+                                            @class(['whitespace-nowrap pb-4 px-1 border-b-2 font-medium text-sm', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:text-slate-400 dark:hover:text-slate-300 dark:hover:border-slate-300' => $status !== $ticketStatus->value, 'border-black-500 text-black-600 dark:border-slate-200 dark:text-slate-200' => $status === $ticketStatus->value])
                                         >
                                             {{ $ticketStatus->label() }}
                                         </button>
@@ -70,12 +70,12 @@
                         <div class="mt-3 inline-flex space-x-2">
                             @if($this->label)
                                 <div>
-                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-black-100 text-black-700">
                                         {{ __('Label') }}: {{ \App\Models\Label::whereSlug($this->label)->first()->name }}
                                         <button
                                             wire:click="$set('label', null)"
                                             type="button"
-                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white"
+                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-black-400 hover:bg-black-200 hover:text-black-500 focus:outline-none focus:bg-black-500 focus:text-white"
                                         >
                                             <span class="sr-only">{{ __('Remove') }}</span>
                                             <x-heroicon-s-x-mark class="h-3 w-3" />
@@ -85,12 +85,12 @@
                             @endif
                             @if($this->author)
                                 <div>
-                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-black-100 text-black-700">
                                         {{ __('Author') }}: {{ \App\Models\User::find($author)->name }}
                                         <button
                                             wire:click="$set('author', null)"
                                             type="button"
-                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white"
+                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-black-400 hover:bg-black-200 hover:text-black-500 focus:outline-none focus:bg-black-500 focus:text-white"
                                         >
                                             <span class="sr-only">{{ __('Remove') }}</span>
                                             <x-heroicon-s-x-mark class="h-3 w-3" />
@@ -100,12 +100,12 @@
                             @endif
                             @if($this->assignee)
                                 <div>
-                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-black-100 text-black-700">
                                         {{ __('Assignee') }}: {{ \App\Models\Agent::find($assignee)->name }}
                                         <button
                                             wire:click="$set('assignee', null)"
                                             type="button"
-                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white"
+                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-black-400 hover:bg-black-200 hover:text-black-500 focus:outline-none focus:bg-black-500 focus:text-white"
                                         >
                                             <span class="sr-only">{{ __('Remove') }}</span>
                                             <x-heroicon-s-x-mark class="h-3 w-3" />
@@ -115,12 +115,12 @@
                             @endif
                             @if($this->priority)
                                 <div>
-                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-black-100 text-black-700">
                                         {{ __('Priority') }}: {{ \App\Enums\TicketPriority::tryFrom($this->priority)->label() }}
                                         <button
                                             wire:click="$set('priority', null)"
                                             type="button"
-                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white"
+                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-black-400 hover:bg-black-200 hover:text-black-500 focus:outline-none focus:bg-black-500 focus:text-white"
                                         >
                                             <span class="sr-only">{{ __('Remove') }}</span>
                                             <x-heroicon-s-x-mark class="h-3 w-3" />
@@ -130,12 +130,12 @@
                             @endif
                             @if($this->product)
                                 <div>
-                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-black-100 text-black-700">
                                         {{ __('Product') }}: {{ \App\Models\Product::find($product)->name }}
                                         <button
                                             wire:click="$set('product', null)"
                                             type="button"
-                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white"
+                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-black-400 hover:bg-black-200 hover:text-black-500 focus:outline-none focus:bg-black-500 focus:text-white"
                                         >
                                             <span class="sr-only">{{ __('Remove') }}</span>
                                             <x-heroicon-s-x-mark class="h-3 w-3" />
@@ -145,12 +145,12 @@
                             @endif
                             @if($this->category)
                                 <div>
-                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-blue-100 text-blue-700">
+                                    <span class="inline-flex items-center py-1 pl-2 pr-1 rounded text-xs font-medium bg-black-100 text-black-700">
                                         {{ __('Category') }}: {{ \App\Models\Category::whereSlug($this->category)->first()->name }}
                                         <button
                                             wire:click="$set('category', null)"
                                             type="button"
-                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:outline-none focus:bg-blue-500 focus:text-white"
+                                            class="flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center text-black-400 hover:bg-black-200 hover:text-black-500 focus:outline-none focus:bg-black-500 focus:text-white"
                                         >
                                             <span class="sr-only">{{ __('Remove') }}</span>
                                             <x-heroicon-s-x-mark class="h-3 w-3" />
@@ -235,7 +235,7 @@
                                                         <div>
                                                             <a
                                                                 href="{{ route('agent.tickets.details', $ticket) }}"
-                                                                class="inline-flex items-center truncate hover:text-blue-500 hover:underline dark:hover:text-blue-400"
+                                                                class="inline-flex items-center truncate hover:text-black-500 hover:underline dark:hover:text-black-400"
                                                             >
                                                                 <x-icon
                                                                     name="{{ $ticket->priority->icon() }}"
@@ -259,7 +259,7 @@
                                                                 <a
                                                                     wire:click="$set('author', '{{ $ticket->user->id }}')"
                                                                     role="button"
-                                                                    class="relative font-normal text-slate-500 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400"
+                                                                    class="relative font-normal text-slate-500 hover:text-black-500 dark:text-slate-400 dark:hover:text-black-400"
                                                                 >
                                                                     {{ $ticket->user->name }}
                                                                 </a>
@@ -267,7 +267,7 @@
                                                                 <a
                                                                     wire:click="$set('category', '{{ $ticket->category->slug }}')"
                                                                     role="button"
-                                                                    class="relative font-normal text-slate-500 hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400"
+                                                                    class="relative font-normal text-slate-500 hover:text-black-500 dark:text-slate-400 dark:hover:text-black-400"
                                                                 >
                                                                     {{ $ticket->category->name }}
                                                                 </a>
@@ -283,7 +283,7 @@
                                                                     <a
                                                                         wire:click="$set('assignee', '{{ $assignee->id }}')"
                                                                         role="button"
-                                                                        class="rounded-full ring-2 ring-white hover:ring-blue-500 hover:-translate-y-0.5 transition dark:ring-slate-300"
+                                                                        class="rounded-full ring-2 ring-white hover:ring-black-500 hover:-translate-y-0.5 transition dark:ring-slate-300"
                                                                         data-tippy-content="{{ $assignee->name }}"
                                                                     >
                                                                         <img

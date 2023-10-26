@@ -6,7 +6,7 @@
         <div class="mt-4 sm:mt-0">
             <a
                 href="{{ route('agent.users.create') }}"
-                class="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:hover:bg-blue-500 dark:focus:ring-offset-slate-800"
+                class="inline-flex items-center rounded-md border border-transparent bg-black-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black-700 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:hover:bg-black-500 dark:focus:ring-offset-slate-800"
             >
                 <x-heroicon-m-user-plus class="-ml-1 mr-2 w-4 h-4"/>
                 {{ __('Add new User') }}
@@ -73,7 +73,7 @@
                                             @if($users->total() > $users->count())
                                                 <button
                                                     wire:click="$toggle('selectAll')"
-                                                    class="text-blue-600 hover:text-blue-500"
+                                                    class="text-black-600 hover:text-black-500"
                                                 >
                                                     {{ $selectAll ? __('Clear selection') : __('Select all :count users', ['count' => $users->total()]) }}
                                                 </button>
@@ -104,7 +104,7 @@
                                         <td class="relative w-8 px-6 sm:px-8">
                                             @if(in_array($user->id, $selected))
                                                 <div
-                                                    class="absolute inset-y-0 left-0 w-0.5 bg-blue-500 dark:bg-blue-400"></div>
+                                                    class="absolute inset-y-0 left-0 w-0.5 bg-black-500 dark:bg-black-400"></div>
                                             @endif
                                             <x-checkbox
                                                 wire:model="selected"
@@ -124,7 +124,7 @@
                                                 </div>
                                                 <div class="ml-4">
                                                     <div class="font-medium text-slate-900 dark:text-slate-200">
-                                                        <a href="{{ route('agent.users.details', $user) }}" @class(['hover:text-blue-500 hover:underline dark:hover:text-blue-400', 'line-through' => $user->isBanned()])>
+                                                        <a href="{{ route('agent.users.details', $user) }}" @class(['hover:text-black-500 hover:underline dark:hover:text-black-400', 'line-through' => $user->isBanned()])>
                                                             {{ $user->name }}
                                                         </a>
                                                     </div>

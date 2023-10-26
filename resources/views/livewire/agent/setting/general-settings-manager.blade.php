@@ -78,7 +78,7 @@
                                             <img
                                                 src="{{ $logoFile ? $logoFile->temporaryUrl() : ($logoPath ? Storage::url($logoPath) : asset('img/logo-white-full.svg')) }}"
                                                 alt="{{ __('Site logo') }}"
-                                                @class(['px-2 py-1 inline-block h-10 w-auto rounded-md', 'bg-blue-600' => !$logoPath || !$logoFile])
+                                                @class(['px-2 py-1 inline-block h-10 w-auto rounded-md', 'bg-black-600' => !$logoPath || !$logoFile])
                                             >
                                         </div>
                                         <div class="ml-4 flex flex-shrink-0 items-start space-x-4 sm:mt-px sm:pt-2">
@@ -92,7 +92,7 @@
                                             <button
                                                 x-on:click.prevent="$refs.photo.click();"
                                                 type="button"
-                                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:text-blue-400 dark:hover:underline dark:focus:ring-offset-slate-800"
+                                                class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:text-black-400 dark:hover:underline dark:focus:ring-offset-slate-800"
                                             >
                                                 {{ __('Change') }}
                                             </button>
@@ -104,7 +104,7 @@
                                                 <button
                                                     x-on:click="$wire.removeLogo()"
                                                     type="button"
-                                                    class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:text-blue-400 dark:hover:underline dark:focus:ring-offset-slate-800"
+                                                    class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:text-black-400 dark:hover:underline dark:focus:ring-offset-slate-800"
                                                 >
                                                     {{ __('Remove') }}
                                                 </button>
@@ -140,7 +140,7 @@
                                             <button
                                                 x-on:click.prevent="$refs.photo.click();"
                                                 type="button"
-                                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:text-blue-400 dark:hover:underline dark:focus:ring-offset-slate-800"
+                                                class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:text-black-400 dark:hover:underline dark:focus:ring-offset-slate-800"
                                             >
                                                 {{ __('Change') }}
                                             </button>
@@ -152,7 +152,7 @@
                                                 <button
                                                     x-on:click="$wire.removeFavicon()"
                                                     type="button"
-                                                    class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:text-blue-400 dark:hover:underline dark:focus:ring-offset-slate-800"
+                                                    class="rounded-md font-medium text-black-600 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:text-black-400 dark:hover:underline dark:focus:ring-offset-slate-800"
                                                 >
                                                     {{ __('Remove') }}
                                                 </button>
@@ -206,7 +206,7 @@
                                         <button
                                             wire:click="$set('announcementEnabled', ! '{{ $announcementEnabled }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -217,7 +217,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $announcementEnabled, 'bg-slate-200' => ! $announcementEnabled])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $announcementEnabled, 'bg-slate-200' => ! $announcementEnabled])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -332,7 +332,7 @@
                                         <button
                                             wire:click="$set('cookieConsentEnabled', ! '{{ $cookieConsentEnabled }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -343,7 +343,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $cookieConsentEnabled, 'bg-slate-200' => ! $cookieConsentEnabled])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $cookieConsentEnabled, 'bg-slate-200' => ! $cookieConsentEnabled])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -439,7 +439,7 @@
                                         <button
                                             wire:click="$set('enableUserRegistration', ! '{{ $enableUserRegistration }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -450,7 +450,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $enableUserRegistration, 'bg-slate-200' => ! $enableUserRegistration])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $enableUserRegistration, 'bg-slate-200' => ! $enableUserRegistration])
                                             ></span>
                                             <span
                                                 aria-hidden="true"
@@ -510,7 +510,7 @@
                                         <button
                                             wire:click="$set('reCaptchaEnabled', ! '{{ $reCaptchaEnabled }}')"
                                             type="button"
-                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
+                                            class="group relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -521,7 +521,7 @@
                                             ></span>
                                             <span
                                                 aria-hidden="true"
-                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-blue-600' => $reCaptchaEnabled, 'bg-slate-200' => ! $reCaptchaEnabled])
+                                                @class(['pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out', 'bg-black-600' => $reCaptchaEnabled, 'bg-slate-200' => ! $reCaptchaEnabled])
                                             ></span>
                                             <span
                                                 aria-hidden="true"

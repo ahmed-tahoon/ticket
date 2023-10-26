@@ -180,7 +180,7 @@
                                     {{ __('Already have an account?') }}
                                     <a
                                         href="{{ route('login') }}"
-                                        class="font-medium text-blue-600 hover:text-blue-500"
+                                        class="font-medium text-black-600 hover:text-black-500"
                                     >
                                         {{ __('Sign in') }}
                                     </a>

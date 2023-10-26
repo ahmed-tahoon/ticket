@@ -104,7 +104,7 @@
                                     <x-slot:trigger>
                                         <button
                                             type="button"
-                                            class="p-1 text-slate-400 rounded-full hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:text-slate-300 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
+                                            class="p-1 text-slate-400 rounded-full hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:text-slate-300 dark:hover:text-slate-200 dark:focus:ring-offset-slate-800"
                                         >
                                             <template x-if="theme === 'light'">
                                                 <x-heroicon-o-sun class="w-6 h-6" />
@@ -152,7 +152,7 @@
                                     <x-slot:trigger>
                                         <button
                                             type="button"
-                                            class="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-slate-800"
+                                            class="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500 dark:focus:ring-offset-slate-800"
                                             aria-expanded="false"
                                             aria-haspopup="true"
                                         >

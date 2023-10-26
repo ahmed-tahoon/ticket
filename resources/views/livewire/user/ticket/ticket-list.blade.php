@@ -16,7 +16,7 @@
             <div class="divide-y divide-slate-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
                 @include('layouts.navigation-user')
 
-                <div class="lg:col-span-9 min-h-[500px]">
+                <div class="lg:col-span-12 min-h-[500px]">
                     @if($this->tickets->count())
                         <div class="border-b border-slate-200 pl-4 pr-6 pt-4 pb-4 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6">
                             <div class="flex items-center">
@@ -33,7 +33,7 @@
                                 <li class="relative py-5 pl-4 pr-6 hover:bg-slate-50 sm:py-6 sm:pl-6 lg:pl-8 xl:pl-6">
                                     <div class="min-w-0 space-y-3">
                                         <div class="flex items-center space-x-3">
-                                            <span class="inline-flex items-center rounded bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800 whitespace-nowrap">{{ $ticket->status->label() }}</span>
+                                            <span class="inline-flex items-center rounded bg-black-100 px-2 py-0.5 text-xs font-medium text-black-800 whitespace-nowrap">{{ $ticket->status->label() }}</span>
 
                                             <h2 class="text-sm font-medium truncate">
                                                 <a href="{{ route('user.tickets.details', $ticket) }}">
@@ -73,7 +73,7 @@
                             <div class="mt-6">
                                 <a
                                     href="{{ route('user.tickets.create') }}"
-                                    class="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                    class="inline-flex items-center rounded-md border border-transparent bg-black-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black-700 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2"
                                 >
                                     <x-heroicon-m-plus class="-ml-1 mr-2 h-5 w-5" />
                                     {{ __('Submit a ticket') }}

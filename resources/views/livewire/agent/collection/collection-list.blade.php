@@ -73,7 +73,7 @@
                                             wire:model.defer="collection.name"
                                             type="text"
                                             id="name"
-                                            class="block w-full border-0 border-b border-dotted border-transparent bg-slate-50 font-medium p-0 focus:border-blue-600 focus:ring-0 dark:bg-transparent dark:placeholder-slate-400 dark:text-slate-200 dark:focus:border-blue-500 dark:focus:placeholder-slate-500"
+                                            class="block w-full border-0 border-b border-dotted border-transparent bg-slate-50 font-medium p-0 focus:border-black-600 focus:ring-0 dark:bg-transparent dark:placeholder-slate-400 dark:text-slate-200 dark:focus:border-black-500 dark:focus:placeholder-slate-500"
                                             placeholder="{{ __('Collection name') }}"
                                             autocomplete="off"
                                         >
@@ -89,7 +89,7 @@
                                             wire:model.defer="collection.description"
                                             type="text"
                                             id="description"
-                                            class="block w-full border-0 border-b border-dotted border-transparent bg-slate-50 p-0 text-sm focus:border-blue-600 focus:ring-0 dark:bg-transparent dark:placeholder-slate-400 dark:text-slate-400 dark:focus:border-blue-500 dark:focus:placeholder-slate-500"
+                                            class="block w-full border-0 border-b border-dotted border-transparent bg-slate-50 p-0 text-sm focus:border-black-600 focus:ring-0 dark:bg-transparent dark:placeholder-slate-400 dark:text-slate-400 dark:focus:border-black-500 dark:focus:placeholder-slate-500"
                                             placeholder="{{ __('Optional description') }}"
                                             autocomplete="off"
                                         >
@@ -142,7 +142,7 @@
                                         <h4 class="font-medium text-slate-900 sm:truncate dark:text-slate-200">
                                             <a
                                                 href="{{ route('agent.collections.details', $collection) }}"
-                                                class="hover:text-blue-500 hover:underline dark:hover:text-blue-400"
+                                                class="hover:text-black-500 hover:underline dark:hover:text-black-400"
                                             >
                                                 {{ $collection->name }}
                                             </a>
