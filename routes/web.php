@@ -20,7 +20,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(RedirectIfNotSetup::class)->group(function () {
+// Route::group([
+//     'middleware' => [
+//         RedirectIfNotSetup::class,
+//         'auth', 'prevent-banned-user'
+//     ],
+//     'prefix' => 'user',
+//     'as' => 'user.',
+// ], function () {
+Route::middleware([RedirectIfNotSetup::class,'auth','check-otp'])->group(function () {
+    // Route::get('/', function() {
+    //     return to_route('login');
+    // })->name('guest.welcome');
     Route::get('/', Welcome::class)->name('guest.welcome');
     Route::get('collections', CollectionList::class)->name('guest.collection-list');
     Route::get('collections/{collection:slug}', CollectionDetails::class)->name('guest.collection-details');

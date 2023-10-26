@@ -26,6 +26,9 @@ class User extends Authenticatable implements HasMedia, BannableContract
      * @var array<int, string>
      */
     protected $fillable = [
+        'otp',
+        'otp_expiry',
+        'pass_otp',
         'name',
         'email',
         'password',

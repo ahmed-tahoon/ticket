@@ -76,7 +76,7 @@
                                     >
                                         <div class="flex-grow">
                                             <img
-                                                src="{{ $logoFile ? $logoFile->temporaryUrl() : ($logoPath ? Storage::url($logoPath) : asset('img/logo-white-full.png')) }}"
+                                                src="{{ $logoFile ? $logoFile->temporaryUrl() : ($logoPath ? Storage::url($logoPath) : asset('img/logo-white-full.svg')) }}"
                                                 alt="{{ __('Site logo') }}"
                                                 @class(['px-2 py-1 inline-block h-10 w-auto rounded-md', 'bg-blue-600' => !$logoPath || !$logoFile])
                                             >
@@ -124,7 +124,7 @@
                                     >
                                         <div class="flex-grow">
                                             <img
-                                                src="{{ $faviconFile ? $faviconFile->temporaryUrl() : ($faviconPath ? Storage::url($faviconPath) : asset('img/logo-blue.png')) }}"
+                                                src="{{ $faviconFile ? $faviconFile->temporaryUrl() : ($faviconPath ? Storage::url($faviconPath) : asset('img/logo-blue.svg')) }}"
                                                 alt="{{ __('Site favicon') }}"
                                                 class="inline-block h-10 w-auto"
                                             >

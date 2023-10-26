@@ -4,7 +4,7 @@
             <div>
                 <a href="/">
                     <img
-                        src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/logo-blue.png') }}"
+                        src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/logo-blue.svg') }}"
                         alt="{{ $generalSettings->site_name ?? config('app.name') }}"
                         class="h-12 w-auto"
                     >
@@ -83,7 +83,7 @@
                             </div>
                         </div>
 
-                        <div class="space-y-1">
+                        <!-- <div class="space-y-1">
                             <x-label
                                 for="password"
                                 :value="__('Password')"
@@ -97,10 +97,10 @@
                                     required
                                 />
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="flex items-center justify-between">
-                            <div class="flex items-center">
+                            <!-- <div class="flex items-center">
                                 <x-checkbox
                                     id="remember-me"
                                     name="remember-me"
@@ -111,8 +111,8 @@
                                     :value="__('Remember me')"
                                     class="ml-2"
                                 />
-                            </div>
-
+                            </div> -->
+<!-- 
                             @if (Route::has('password.request'))
                                 <div class="text-sm">
                                     <a
@@ -123,7 +123,7 @@
                                         {{ __('Forgot your password?') }}
                                     </a>
                                 </div>
-                            @endif
+                            @endif -->
                         </div>
 
                         <!-- Captcha -->
@@ -156,17 +156,7 @@
                             </x-button.primary>
                         </div>
 
-                        <div>
-                            <p class="text-sm text-center text-slate-600">
-                                {{ __('Don\'t have an account?') }}
-                                <a
-                                    href="{{ route('register') }}"
-                                    class="font-medium text-blue-600 hover:text-blue-500"
-                                >
-                                    {{ __('Sign up') }}
-                                </a>
-                            </p>
-                        </div>
+                        
                     </form>
                 </div>
             </div>

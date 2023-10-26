@@ -57,7 +57,7 @@
                         class="flex items-center"
                     >
                         <img
-                            src="{{ $generalSettings->logo_path ? Storage::url($generalSettings->logo_path) : asset('img/logo-white-full.png') }}"
+                            src="{{ $generalSettings->logo_path ? Storage::url($generalSettings->logo_path) : asset('img/logo-white-full.svg') }}"
                             alt="{{ $generalSettings->site_name ?: config('app.name', 'Ticksify') }}"
                             class="h-8 w-auto"
                         >
@@ -236,7 +236,7 @@
                     class="flex items-center"
                 >
                     <img
-                        src="{{ $generalSettings->logo_path ? Storage::url($generalSettings->logo_path) : asset('img/logo-white-full.png') }}"
+                        src="{{ $generalSettings->logo_path ? Storage::url($generalSettings->logo_path) : asset('img/logo-white-full.svg') }}"
                         alt="{{ $generalSettings->site_name ?: config('app.name', 'Ticksify') }}"
                         class="h-10 w-auto"
                     >

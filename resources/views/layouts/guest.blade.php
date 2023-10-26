@@ -20,7 +20,7 @@
         <!-- Favicon -->
         <link
             rel="icon"
-            href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.png') }}"
+            href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.jpg') }}"
         >
 
         <!-- Fonts -->
@@ -75,7 +75,7 @@
                         <div class="flex items-center justify-between w-full lg:w-auto">
                             <a href="/">
                                 <img
-                                    src="{{ $generalSettings->logo_path ? Storage::url($generalSettings->logo_path) : asset('img/logo-white-full.png') }}"
+                                    src="{{ $generalSettings->logo_path ? Storage::url($generalSettings->logo_path) : asset('img/logo-white-full.svg') }}"
                                     alt="{{ $generalSettings->site_name ?: config('app.name', 'Ticksify') }}"
                                     class="h-8 w-auto sm:h-10"
                                 >

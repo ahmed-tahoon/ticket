@@ -23,7 +23,7 @@
         <!-- Favicon -->
         <link
             rel="icon"
-            href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.png') }}"
+            href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.jpg') }}"
         >
 
         <!-- Fonts -->

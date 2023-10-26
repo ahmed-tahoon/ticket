@@ -3,7 +3,7 @@
         <x-slot name="logo">
             <a href="/">
                 <img
-                    src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/logo-blue.png') }}"
+                    src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/logo-blue.svg') }}"
                     alt="{{ $generalSettings->site_name ?? config('app.name') }}"
                     class="h-12 w-auto"
                 >
