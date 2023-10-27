@@ -91,3 +91,5 @@
     }
 
     button.disabled {opacity: 0.2 !important;  }
+
+    .border-slate-200 {}

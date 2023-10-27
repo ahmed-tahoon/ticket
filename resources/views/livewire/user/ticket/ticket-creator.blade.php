@@ -6,7 +6,7 @@
     <x-slot:header>
         <div class="relative py-6 max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-5xl lg:px-8">
             <h1 class="font-display font-medium tracking-tight text-white text-4xl">
-                {{ __('Submit new Ticket') }}
+                {{ __('Submit New Ticket') }}
             </h1>
         </div>
     </x-slot:header>
@@ -17,13 +17,13 @@
                 @include('layouts.navigation-user')
 
                 <div class="lg:col-span-12 min-h-[500px]">
-                    <div class="border-b border-slate-200 pl-4 pr-6 pt-4 pb-4 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6">
+                    {{-- <div class="border-b border-slate-200 pl-4 pr-6 pt-4 pb-4 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6">
                         <div class="flex items-center">
                             <h1 class="flex-1 font-display text-lg">
                                 {{ __('Submit new ticket') }}
                             </h1>
                         </div>
-                    </div>
+                    </div> --}}
                     <form wire:submit.prevent="submit">
                         <div class="px-4 py-6 sm:p-6">
                             <fieldset

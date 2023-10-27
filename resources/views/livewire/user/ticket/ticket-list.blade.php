@@ -19,10 +19,20 @@
                 <div class="lg:col-span-12 min-h-[500px]">
                     @if($this->tickets->count())
                         <div class="border-b border-slate-200 pl-4 pr-6 pt-4 pb-4 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6">
-                            <div class="flex items-center">
-                                <h1 class="flex-1 font-display text-lg">
+                            <div class="flex items-center justify-end">
+                                {{-- <h1 class="flex-1 font-display text-lg">
                                     {{ __('Tickets') }}
-                                </h1>
+                                </h1> --}}
+
+                                <div class="mt-6">
+                                    <a
+                                        href="{{ route('user.tickets.create') }}"
+                                        class="inline-flex items-center rounded-md px-4 py-2  text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-900 dark:hover:bg-gray-700 dark:focus:ring-offset-slate-900"
+                                    >
+                                        <x-heroicon-m-plus class="-ml-1 mr-2 h-5 w-5" />
+                                        {{ __('New ticket') }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <ul
@@ -33,7 +43,7 @@
                                 <li class="relative py-5 pl-4 pr-6 hover:bg-slate-50 sm:py-6 sm:pl-6 lg:pl-8 xl:pl-6">
                                     <div class="min-w-0 space-y-3">
                                         <div class="flex items-center space-x-3">
-                                            <span class="inline-flex items-center rounded bg-black-100 px-2 py-0.5 text-xs font-medium text-black-800 whitespace-nowrap">{{ $ticket->status->label() }}</span>
+                                            <span class="inline-flex items-center rounded bg-gray-800 px-2 py-0.5 text-xs font-medium text-white whitespace-nowrap">{{ $ticket->status->label() }}</span>
 
                                             <h2 class="text-sm font-medium truncate">
                                                 <a href="{{ route('user.tickets.details', $ticket) }}">

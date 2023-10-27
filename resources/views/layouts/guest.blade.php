@@ -30,7 +30,7 @@
     <header x-data="{ open: false }" class="relative bg-black-600 pb-36">
         <!-- Header background -->
         <div class="absolute inset-0">
-            <img src="{{ asset('img/background-header.jpg') }}" alt="Header background" class="w-full h-full object-cover" fetchpriority="high">
+            <img src="{{ asset('img/supportgrandautomatio3.png') }}" alt="Header background" class="w-full h-full object-cover" fetchpriority="high">
         </div>
 
         <!-- Header navigation -->
