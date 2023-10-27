@@ -1,50 +1,4 @@
-<style>
-    .container {
-        margin-top: 70px;
-    }
 
-    .inputfield {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .input {
-        height: 3em;
-        width: 3em;
-        border: 2px solid #dad9df;
-        outline: none;
-        text-align: center;
-        font-size: 1.5em;
-        border-radius: 0.3em;
-        background-color: #ffffff;
-        outline: none;
-        /*Hide number field arrows*/
-        -moz-appearance: textfield;
-    }
-
-    input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    .show {
-        display: block;
-    }
-
-    .hide {
-        display: none;
-    }
-
-    .input:disabled {
-        color: #89888b;
-    }
-
-    .input:focus {
-        border: 3px solid #ffb800;
-    }
-</style>
 
 <x-blank-layout>
     <div class="flex flex-1 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
@@ -54,8 +8,9 @@
                     <img src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/logo-blue.svg') }}" alt="{{ $generalSettings->site_name ?? config('app.name') }}" class="h-12 w-auto">
                 </a>
                 <h2 class="mt-6 text-3xl font-display tracking-tight text-slate-900">
-                    {{ __('Verify your otp') }}
+                    {{ __('Enter Your OTP') }}
                 </h2>
+                <p class="mt-3 text-sm font-display tracking-tight text-slate-600">Input the 4-digit code sent to your email address for verification.</p>
             </div>
 
             <div class="mt-8">
@@ -73,7 +28,7 @@
                         @csrf
                         <input type="hidden" name="otp" id="otp">
                         <div class="space-y-1">
-                            <div class="container">
+                            
                                 <div class="inputfield">
                                     <input type="number" maxlength="1" class="input" disabled />
                                     <input type="number" maxlength="1" class="input" disabled />
@@ -83,7 +38,7 @@
                                 <div>
                                 </div>
                                 <!-- <button class="hide" id="submit" onclick="validateOTP()">Submit</button> -->
-                            </div>
+                            
                         </div>
 
 
@@ -102,7 +57,7 @@
         </div>
     </div>
     <div class="relative hidden w-0 flex-1 lg:block">
-        <img class="absolute inset-0 h-full w-full object-cover" src="{{ asset('img/background-auth.jpg') }}" alt="">
+        <img class="absolute inset-0 h-full w-full object-cover" src="{{ asset('img/supportgrandautomatio3.png') }}" alt="">
     </div>
 </x-blank-layout>
 

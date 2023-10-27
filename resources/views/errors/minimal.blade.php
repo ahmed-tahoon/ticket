@@ -23,7 +23,7 @@
         <!-- Favicon -->
         <link
             rel="icon"
-            href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.jpg') }}"
+            href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.png') }}"
         >
 
         <!-- Fonts -->
@@ -55,7 +55,7 @@
                         <span class="sr-only">{{ $generalSettings->favicon_path ?: config('app.name') }}</span>
                         <img
                             class="h-12 w-auto"
-                            src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.jpg') }}"
+                            src="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.png') }}"
                             alt="{{ $generalSettings->site_name ?: config('app.name') }}"
                         >
                     </a>

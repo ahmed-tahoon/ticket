@@ -10,7 +10,7 @@
     <meta name="description" content="{{ $description ?? $generalSettings->site_description }}" />
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.jpg') }}">
+    <link rel="icon" href="{{ $generalSettings->favicon_path ? Storage::url($generalSettings->favicon_path) : asset('img/favicon.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

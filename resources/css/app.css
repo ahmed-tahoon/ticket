@@ -10,6 +10,8 @@
     color-scheme: dark;
 }
 
+
+
 .ProseMirror div.ProseMirror-selectednode {
     @apply ring-2 ring-offset-2 ring-black-400;
 }
@@ -25,3 +27,67 @@
     pointer-events: none;
     height: 0;
 }
+
+[type="text"]:focus, input:where(:not([type])):focus, [type="email"]:focus, [type="url"]:focus, [type="password"]:focus, [type="number"]:focus, [type="date"]:focus, [type="datetime-local"]:focus, [type="month"]:focus, [type="search"]:focus, [type="tel"]:focus, [type="time"]:focus, [type="week"]:focus, [multiple]:focus, textarea:focus, select:focus {
+
+    --tw-ring-color: #535353;
+    border-color: #535353;
+}
+
+ .inputfield {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input {
+        height: 3em;
+        width: 3em;
+        border: 1px solid #535353;
+        outline: none;
+        text-align: center;
+        font-size: 1.5em;
+        border-radius: 5px;
+        background-color: #ffffff;
+        outline: none;
+        /*Hide number field arrows*/
+        -moz-appearance: textfield;
+    }
+
+    /* For WebKit browsers (e.g., Chrome, Safari) */
+    .input::-webkit-inner-spin-button,
+    .input::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* For Firefox */
+    .input {
+      -moz-appearance: textfield;
+    }
+
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .input:disabled {
+        color: #535353;
+    }
+
+    .input:focus {
+        border: 1px solid #535353;
+        border-radius:5px;
+    }
+
+    button.disabled {opacity: 0.2 !important;  }

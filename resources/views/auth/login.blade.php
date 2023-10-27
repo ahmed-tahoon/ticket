@@ -9,44 +9,14 @@
                         class="h-12 w-auto"
                     >
                 </a>
-                <h2 class="mt-6 text-3xl font-display tracking-tight text-slate-900">
+                <h2 class="mt-6 text-2xl font-display tracking-tight text-slate-900">
                     {{ __('Sign in to your account') }}
                 </h2>
+                <p class="mt-3 text-sm font-display tracking-tight text-slate-600">We'll send an OTP code to the email provided. This code is valid for 30 minutes.</p>
             </div>
 
             <div class="mt-8">
-                @if(app(App\Settings\EnvatoSettings::class)->oauth_enabled)
-                    <div>
-                        <div>
-                            <p class="text-sm font-medium text-slate-700 sr-only">
-                                {{ __('Sign in with') }}
-                            </p>
-                            <div class="mt-1">
-                                <div>
-                                    <a
-                                        href="{{ route('social-login.handler', ['provider' => 'envato']) }}"
-                                        class="inline-flex w-full justify-center rounded-md border border-slate-300 bg-white py-2 px-4 text-sm font-medium text-slate-500 shadow-sm hover:bg-slate-50"
-                                    >
-                                        <x-icon-envato class="-ml-1 mr-2 w-5 h-5" />
-                                        <span>{{ __('Sign in with Envato') }}</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative my-6">
-                            <div
-                                class="absolute inset-0 flex items-center"
-                                aria-hidden="true"
-                            >
-                                <div class="w-full border-t border-slate-300"></div>
-                            </div>
-                            <div class="relative flex justify-center text-sm">
-                                <span class="bg-white px-2 text-slate-500">{{ __('Or continue with') }}</span>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-
+                
                 <!-- Session Status -->
                 <x-auth-session-status
                     class="rounded-md bg-green-50 p-4 mb-4"
@@ -67,16 +37,17 @@
                     >
                         @csrf
                         <div class="space-y-1">
-                            <x-label
+                            {{-- <x-label
                                 for="email"
                                 :value="__('Email')"
-                            />
+                            /> --}}
                             <div class="mt-1">
                                 <x-input
                                     id="email"
                                     type="text"
                                     name="email"
                                     autocomplete="email"
+                                    placeholder="enter your email to recieve OTP.."
                                     required
                                     autofocus
                                 />
@@ -152,7 +123,7 @@
 
                         <div>
                             <x-button.primary class="block w-full">
-                                {{ __('Sign in') }}
+                                {{ __('Next') }}
                             </x-button.primary>
                         </div>
 
@@ -165,7 +136,7 @@
     <div class="relative hidden w-0 flex-1 lg:block">
         <img
             class="absolute inset-0 h-full w-full object-cover"
-            src="{{ asset('img/background-auth.jpg') }}"
+            src="{{ asset('img/supportgrandautomatio3.png') }}"
             alt=""
         >
     </div>
